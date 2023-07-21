@@ -1,0 +1,23 @@
+[
+    {
+        "Id":"1",
+        "Nombre": "Fast and Furious X",
+        "Anio":2023,
+        "Fecha_Estreno":"18 de Mayo",
+        "Director":"Louis Leterrier",
+        "img":"https://pics.filmaffinity.com/fast_x-854185380-large.jpg",
+        "Comentarios":[
+        ],
+        "sinopsis":"Dom Toretto y sus familias se enfrentan al peor enemigo imaginable, uno llegado desde el pasado con sed de venganza, dispuesto a cualquier cosa con tal de destruir todo aquello que Dom ama."
+    },
+    {
+        "Id":"2",
+        "Nombre": "Barbie",
+        "Anio": 2023,
+        "Fecha_Estreno":"20 de Julio",
+        "Director": "Greta Gerwig",
+        "img": "https://static.wikia.nocookie.net/doblaje/images/7/7c/BARBIEPOSTER_.jpg/revision/latest?cb=20230627002536&path-prefix=es",
+        "Comentarios":[],
+        "sinopsis": "Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
+    }
+]
