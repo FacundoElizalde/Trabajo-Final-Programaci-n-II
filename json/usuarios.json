@@ -13,6 +13,38 @@
         "Usuario": "Catchingfire2020",
         "Id": "2",
         "Peliculas_Comentadas":[ ],
-        "contrasenia": "fire_ball"
+        "Contrasenia": "fire_ball"
+    },
+    {
+        "Nombre": "Lionel",
+        "Apellido": "Messi",
+        "Usuario": "leomessi10",
+        "Id": "3",
+        "Peliculas_Comentadas":[ ],
+        "Contrasenia": "qatar2022elijocreer"
+    },
+    {
+        "Nombre": "Onni",
+        "Apellido": "Mattikainen",
+        "Usuario": "RallyLegend25",
+        "Id": "4",
+        "Peliculas_Comentadas":[ ],
+        "Contrasenia": "MatinsenJensen67"
+    },
+    {
+        "Nombre": "Jihyo",
+        "Apellido": "Park",
+        "Usuario": "zyozyo",
+        "Id": "5",
+        "Peliculas_Comentadas":[ ],
+        "Contrasenia": "oneinamillion"
+    },
+    {
+        "Nombre": "Jose",
+        "Apellido": "Perez",
+        "Usuario": "Administrador",
+        "Id": "6",
+        "Peliculas_Comentadas":[ ],
+        "Contrasenia": "abc123"
     }
 ]
