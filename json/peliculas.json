@@ -5,6 +5,7 @@
         "Anio":2023,
         "Fecha_Estreno":"18 de Mayo",
         "Director":"Louis Leterrier",
+        "Genero": "Acción",
         "img":"https://pics.filmaffinity.com/fast_x-854185380-large.jpg",
         "Comentarios":[ ],
         "Sinopsis":"Dom Toretto y sus familias se enfrentan al peor enemigo imaginable, uno llegado desde el pasado con sed de venganza, dispuesto a cualquier cosa con tal de destruir todo aquello que Dom ama."
@@ -15,6 +16,7 @@
         "Anio": 2023,
         "Fecha_Estreno":"20 de Julio",
         "Director": "Greta Gerwig",
+        "Genero": " Comedia",
         "img": "https://static.wikia.nocookie.net/doblaje/images/7/7c/BARBIEPOSTER_.jpg/revision/latest?cb=20230627002536&path-prefix=es",
         "Comentarios":[ ],
         "Sinopsis": "Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
@@ -25,6 +27,7 @@
         "Anio": 2023,
         "Fecha_Estreno": "20 de Julio",
         "Director": "Christoper Nolan",
+        "Genero": "Ciencia Ficción",
         "img": "https://x-surcine.com/wp-content/uploads/2023/07/JPG000ax-4.jpg",
         "Comentarios":[ ],
         "Sinopsis": "El físico J Robert Oppenheimer trabaja con un equipo de científicos durante el Proyecto Manhattan, que condujo al desarrollo de la bomba atómica."
@@ -35,6 +38,7 @@
         "Anio": 2008,
         "Fecha_Estreno": "17 de Julio",
         "Director": "Christoper Nolan",
+        "Genero": "Acción",
         "img": "https://static.wikia.nocookie.net/batman/images/4/4b/Espanol_3584-1-.jpg/revision/latest?cb=20141102170439&path-prefix=es",
         "Comentarios":[ ],
         "Sinopsis": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía.",
@@ -45,8 +49,169 @@
         "Anio": 1972,
         "Fecha_Estreno": "20 de Septiembre",
         "Director": "Francis Ford Coppola",
+        "Genero": "Drama",
         "img": "https://musicart.xboxlive.com/7/77295200-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
         "Comentarios":[ ],
         "Sinopsis": "Una adaptación ganadora del Premio de la Academia, de la novela de Mario Puzo acerca de la familia Corleone."
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
+    },
+    {
+        "Id": ,
+        "Nombre": ,
+        "Anio": ,
+        "Fecha_Estreno": ,
+        "Director": ,
+        "img": ,
+        "Comentarios": ,
+        "Sinopsis": 
     }
 ]
