@@ -20,17 +20,19 @@
                        
                     <div class="buscador">
                         <form action="/buscar" method="POST" class="formulario_buscar">
+
                             <input type="text" name="info_buscar" placeholder=" Que desea buscar?" class="input_buscador">
                             <input type="submit" value="Buscar" class="boton-menu"/>
                         </form>
                     </div>
 
                     <div>
-                        <form method="get" action="perfil">
-                            <button id="btn-perfil"> 
-                                <span class="material-icons">manage_accounts</span>
-                            </button>
-                        </form> 
+                      <a href="{{url_for('login')}}">
+                        <button id="btn-perfil"> 
+                          <span class="material-icons">manage_accounts</span>
+                        </button>
+                      </a>
+                    
                     </div>
                 </nav>
             </header>
