@@ -1,0 +1,18 @@
+[
+    {
+        "Nombre":"Tomas",
+        "Apellido":"Durso",
+        "Usuario":"TomyDurso22",
+        "Id":"1",
+        "Peliculas_Comentadas":[ ],
+        "Contrasenia":"VamoGimnasia22"
+    },
+    {
+        "Nombre": "Roman",
+        "Apellido": "Grosjean",
+        "Usuario": "Catchingfire2020",
+        "Id": "2",
+        "Peliculas_Comentadas":[ ],
+        "contrasenia": "fire_ball"
+    }
+]
