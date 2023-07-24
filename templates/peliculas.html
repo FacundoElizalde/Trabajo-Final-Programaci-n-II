@@ -4,6 +4,7 @@
         <title>Películas Online</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta charset="utf-8">
+
         <link rel="stylesheet" href="../static/css/e_index.css">
     </head>
 
@@ -21,7 +22,6 @@
                        
                     <div class="buscador">
                         <form action="/buscar" method="POST" class="formulario_buscar">
-
                             <input type="text" name="info_buscar" placeholder=" Que desea buscar?" class="input_buscador">
                             <input type="submit" value="Buscar" class="boton-menu"/>
                         </form>
@@ -42,16 +42,22 @@
             <main>
                 <article>
                     <div class="articulos">
-                        {% for i in range(10) %}
-                            <div id="{{i}}">
-                                <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px">
-                                <p> {{ nombre_peliculas[i] }}</p>
-                            </div>
-                        {% endfor %}
+                        {% block content %}
+                            {% if nombre_peliculas|length > 0 %}
+                                {% for i in range(nombre_peliculas|length) %}
+                                    <div id="{{i}}">
+                                        <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px">
+                                        <p> {{ nombre_peliculas[i] }}</p>
+                                    </div>
+                                {% endfor %}
+
+                            {% else %}
+                                <h1>No se encontró ninguna película con lo que buscó.</h1>
+                            {% endif %}
+                        {% endblock %}
                     </div>
                 </article>
             </main>
-
             <footer>
             </footer>
         </div>
