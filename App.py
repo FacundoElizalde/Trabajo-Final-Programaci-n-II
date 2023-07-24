@@ -11,6 +11,9 @@ with open('Archivos_JSON_Proyecto/usuarios.json', encoding='utf-8') as file:
     users = json.load(file)
 
 @app.route("/")
+def retornar():
+  return redirect(url_for("index"),Response=HTTPStatus.OK)
+
 @app.route("/peliculas.html",methods=["GET"])
 @app.route("/peliculas",methods=["GET"])
 def index():
@@ -20,19 +23,32 @@ def index():
         if (len(lista_nombres_peliculas)<10) and (i["nombre"] not in lista_nombres_peliculas):
             lista_nombres_peliculas.append(i["nombre"])
             lista_imagenes_peliculas.append(i["img"])
-    
-    return Response (render_template("peliculas.html",nombre_peliculas=lista_nombres_peliculas, imagenes_peliculas=lista_imagenes_peliculas),status = HTTPStatus.OK)
+
+    return Response (render_template("peliculas.html",
+    nombre_peliculas=lista_nombres_peliculas,
+    imagenes_peliculas=lista_imagenes_peliculas),
+    status = HTTPStatus.OK,)
 
 @app.route("/buscar/<int:info>",methods=["GET"])
 @app.route("/buscar/<info>",methods=["GET"])
 def buscar(info):
-    return "<h1> "+ str(info) + "</h1>"
+    lista_encontradas=[]
+    for i in peliculas[::-1]:
+        for j in i.values():
+            if (info in str(j)) and (i not in lista_encontradas):
+                lista_encontradas.append(i)
+
+    return Response (render_template("peliculas.html",
+    nombre_peliculas=[i["nombre"] for i in lista_encontradas],
+    imagenes_peliculas=[i["img"] for i in lista_encontradas]),
+    status = HTTPStatus.OK,)
 
 @app.route("/buscar",methods=["POST"])
 def buscar_post():
-    info=request.form["info_buscar"]
-    print(info)
-    return info
+
+    informacion=request.form["info_buscar"]
+
+    return redirect(url_for("buscar", info=informacion,next="edit"),Response=HTTPStatus.OK) 
 
 @app.route('/login', methods=['GET', 'POST'])
 @app.route('/perfil', methods=['GET', 'POST'])
