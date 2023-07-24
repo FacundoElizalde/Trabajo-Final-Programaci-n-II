@@ -20,7 +20,6 @@ def index():
         if (len(lista_nombres_peliculas)<10) and (i["nombre"] not in lista_nombres_peliculas):
             lista_nombres_peliculas.append(i["nombre"])
             lista_imagenes_peliculas.append(i["img"])
-    #print(lista_nombres_peliculas)
     
     return Response (render_template("peliculas.html",nombre_peliculas=lista_nombres_peliculas, imagenes_peliculas=lista_imagenes_peliculas),status = HTTPStatus.OK)
 
@@ -35,9 +34,8 @@ def buscar_post():
     print(info)
     return info
 
-# LOGIN
-# ///////////////////////////////////////////////////////////////////////////////////////////////////
 @app.route('/login', methods=['GET', 'POST'])
+@app.route('/perfil', methods=['GET', 'POST'])
 def login():
   if 'username' in session:
     return Response(f'Su usuario ya se encuentra en sesion y es {session["username"]}')
@@ -57,8 +55,7 @@ def login():
 @app.route('/logout')
 def logout():
   session.pop('username', None)
-  return redirect(url_for('index'))
-# ///////////////////////////////////////////////////////////////////////////////////////////////////
+  return redirect(url_for('peliculas'))
 
 if __name__ == "__main__":
   app.run(debug=True)
