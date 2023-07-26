@@ -5,9 +5,9 @@ import json
 app = Flask(__name__)
 app.secret_key = 'secretKey1234567890'
 
-with open('Archivos_JSON_Proyecto/peliculas.json', encoding='utf-8') as archivo_json1:
+with open('json/peliculas.json', encoding='utf-8') as archivo_json1:
     peliculas = json.load(archivo_json1)
-with open('Archivos_JSON_Proyecto/usuarios.json', encoding='utf-8') as file:
+with open('json/usuarios.json', encoding='utf-8') as file:
     users = json.load(file)
 
 @app.route("/")
@@ -20,8 +20,8 @@ def index():
     lista_nombres_peliculas=[]
     lista_imagenes_peliculas=[]
     for i in peliculas[::-1]:
-        if (len(lista_nombres_peliculas)<10) and (i["nombre"] not in lista_nombres_peliculas):
-            lista_nombres_peliculas.append(i["nombre"])
+        if (len(lista_nombres_peliculas)<10) and (i["Nombre"] not in lista_nombres_peliculas):
+            lista_nombres_peliculas.append(i["Nombre"])
             lista_imagenes_peliculas.append(i["img"])
 
     return Response (render_template("peliculas.html",
@@ -39,7 +39,7 @@ def buscar(info):
                 lista_encontradas.append(i)
 
     return Response (render_template("peliculas.html",
-    nombre_peliculas=[i["nombre"] for i in lista_encontradas],
+    nombre_peliculas=[i["Nombre"] for i in lista_encontradas],
     imagenes_peliculas=[i["img"] for i in lista_encontradas]),
     status = HTTPStatus.OK,)
 
@@ -61,7 +61,7 @@ def login():
       "password": request.form['password']
     }
     for user in users:
-      if dataUser["username"] in user["usuario"] and dataUser["password"] in user["contrasenia"]:
+      if dataUser["username"] in user["Usuario"] and dataUser["password"] in user["Contrasenia"]:
         session['username'] = dataUser['username']
         return Response(f'Usuario logueado correctamente, su usuario es: {session["username"]}')
       else:
