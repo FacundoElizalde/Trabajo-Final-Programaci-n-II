@@ -57,14 +57,16 @@ def login():
       "username": request.form['username'],
       "password": request.form['password']
     }
-    users = controller.funciones.usersFiles()
+    users = funciones.funciones.usersFiles()
     for user in users:
       if dataUser["username"] == user["Usuario"] and dataUser["password"] == user["Contrasenia"]:
         session["username"] = dataUser['username']
         user = dataUser['username']
       else:
         user = ""
-    return Response (render_template("peliculas.html", user=user, nombre_peliculas=funciones.funciones.nombresPeliculas(), imagenes_peliculas=controller.funciones.imgPeliculas()), status = HTTPStatus.OK)
+    return Response (render_template("peliculas.html", user=user, 
+    nombre_peliculas=funciones.funciones.nombresPeliculas(), 
+    imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
   return render_template('perfil.html')
 
 @app.route('/logout')
@@ -92,10 +94,15 @@ def add_Pelicula():
         "director":request.form['Director'],
         "genero":request.form['Genero'],
         "img":request.form['img'],
-        "comentarios":[],
+        "comentarios":[
+          {
+            "idComent":secrets.token_hex(),
+            "opinion":request.form['opinion']
+          }
+        ],
         "sinopsis":request.form['Sinopsis']
     }
-    funciones.funciones.agregarPeliculas(pelicula)
+    funciones.funciones.agregarPeliculas(pelicula, session['username'])
   return render_template('agregarPeli.html', directores=funciones.funciones.directores, generos=funciones.funciones.generos)
 
 if __name__ == "__main__":
