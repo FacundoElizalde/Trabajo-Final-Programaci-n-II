@@ -17,7 +17,7 @@
         "Fecha_Estreno":"20 de Julio",
         "Director": "Greta Gerwig",
         "Genero": " Comedia",
-        "img": "https://static.wikia.nocookie.net/doblaje/images/7/7c/BARBIEPOSTER_.jpg/revision/latest?cb=20230627002536&path-prefix=es",
+        "img": "https://www.lahiguera.net/cinemania/pelicula/10297/barbie-cartel-11222.jpg",
         "Comentarios":[ ],
         "Sinopsis": "Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
     },
@@ -38,7 +38,7 @@
         "Anio": 2008,
         "Fecha_Estreno": "17 de Julio",
         "Director": "Christoper Nolan",
-        "Genero": "Acción",
+        "Genero": "Accion",
         "img": "https://i.ebayimg.com/images/g/lpUAAOSwgZJfjIhO/s-l1600.jpg",
         "Comentarios":[ ],
         "Sinopsis": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía."
@@ -64,5 +64,71 @@
         "img": "https://es.web.img2.acsta.net/pictures/22/10/07/16/48/1142280.jpg",
         "Comentarios":[ ] ,
         "Sinopsis": "Unos arqueólogos liberan de su tumba a Black Adam, quien llevaba 5000 años preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despertó." 
+    },
+    {
+        "Id": "7",
+        "Nombre": "Blackpink: The Movie",
+        "Anio": 2022,
+        "Fecha_Estreno": "4 de Agosto",
+        "Director": "Jung Su-yee",
+        "Genero": "Documental",
+        "img": "https://pics.filmaffinity.com/Blackpink_la_pelaicula-249752835-large.jpg",
+        "Comentarios":[ ],
+        "Sinopsis": "Entrevistas exclusivas y material inédito de los cinco años de trayectoria de Blackpink, el grupo de pop coreano compuesto por Jennie, Lisa, Rosé y Ji-Soo."
+    },
+    {
+        "Id": "8",
+        "Nombre": "Transformers 7",
+        "Anio": 2023,
+        "Fecha_Estreno": "8 de Junio",
+        "Director": "Steven Caple Jr.",
+        "Genero": "Accion",
+        "img": "https://pics.filmaffinity.com/Transformers_El_despertar_de_las_bestias-314641307-large.jpg",
+        "Comentarios":[ ] ,
+        "Sinopsis": "Durante la década de 1990, los Maximals, Predacons y Terrorcons se unen a la batalla existente en la Tierra entre Autobots y Decepticons."
+    },
+    {
+        "Id": "9",
+        "Nombre": "The Godfather II",
+        "Anio": 1974,
+        "Fecha_Estreno": "26 de Diciembre",
+        "Director": "Francis Ford Coppola",
+        "Genero": "Drama",
+        "img": "https://m.media-amazon.com/images/I/71Tn5ZErDiL._RI_.jpg",
+        "Comentarios":[ ] ,
+        "Sinopsis": "Michael Corleone lidera el imperio criminal de su padre, mientras que se recuerda el ascenso al poder del joven Vito." 
+    },
+    {
+        "Id": "10",
+        "Nombre": "The Godfather III",
+        "Anio": 1991,
+        "Fecha_Estreno": "16 de Mayo",
+        "Director": "Francis Ford Coppola",
+        "Genero": "Drama",
+        "img": "https://m.media-amazon.com/images/M/MV5BNWFlYWY2YjYtNjdhNi00MzVlLTg2MTMtMWExNzg4NmM5NmEzXkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_.jpg",
+        "Comentarios":[ ] ,
+        "Sinopsis": "Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar todas las posesiones de la familia negociando con el Vaticano. Después de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios."
+    },
+    {
+        "Id": "11",
+        "Nombre": "Clockwork Orange",
+        "Anio": 1985,
+        "Fecha_Estreno": "25 de Julio",
+        "Director": "Stanley Kubrick",
+        "Genero": "Drama",
+        "img": "https://cdn.culturagenial.com/es/imagenes/1971-a-clockwork-orange.jpg",
+        "Comentarios":[ ] ,
+        "Sinopsis": "Un criminal en la Inglaterra del futuro pasa una serie de procesos experimentales para corregir sus impulsos violentos."
+    },
+    {
+        "Id": "12",
+        "Nombre": "Forrest Gump",
+        "Anio": 1994,
+        "Fecha_Estreno": "6 de Octubre",
+        "Director": "Robert Zemeckis",
+        "Genero": "Drama",
+        "img": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+        "Comentarios":[ ] ,
+        "Sinopsis": "Forrest Gump, un joven sureño, tenaz e inocente, es protagonista de acontecimientos cruciales en la historia de los Estados Unidos."
     }
 ]
