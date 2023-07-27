@@ -1,4 +1,8 @@
 import json
+from flask import session
+
+Generos = [ ]
+Directores = [ ]
 
 def moviesFiles():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
@@ -25,3 +29,16 @@ def imgPeliculas():
     if (len(img)<10) and (i["img"] not in img):
       img.append(i["img"])
   return img
+
+def add_Peliculas(pelicula):
+  movies = moviesFiles()
+  movies.append(pelicula)
+  with open('./json/peliculas.json', 'w') as a:
+    json.dump(movies, a, indent=4)
+
+def verify():
+  if 'username' in session:
+    user = session['username']
+  else:
+    user = ""
+  return user
