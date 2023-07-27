@@ -111,7 +111,15 @@ def add_Pelicula():
 
 @app.route("/pelicula/edit/<movie>",methods=["GET","POST"])
 def edit_pelicula(peli):
-  return render_template("edit_pelicula.html")
+    if request.method=="POST":
+      pelicula_mod=funciones.funciones.retPeli(peli)
+      if request.form["editNombre"]=="":
+        pelicula_mod["nombre"]=pelicula_mod["nombre"]
+      else:
+        pelicula_mod["nombre"]=request.form["editNombre"]
+      return render_template("edit_pelicula.html",pelicula_encontrada=pelicula_mod)
+    else:
+      return render_template("edit_pelicula.html",pelicula_encontrada=funciones.funciones.retPeli(peli))
 
 if __name__ == "__main__":
     app.run(debug=True)
