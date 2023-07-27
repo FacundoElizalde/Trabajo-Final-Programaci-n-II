@@ -28,7 +28,9 @@
                     </div>
 
                     <div>
-                    {% if user == "" %}
+                        <a href="{{url_for('dGI')}}">Directores, generos e imagenes</a>
+                        <a href="{{url_for('allPelis')}}">Todas las Peliculas</a>
+                        {% if user == "" %}
                       <a href="{{url_for('login')}}">
                         <button id="btn-perfil"> 
                           <span class="material-icons">manage_accounts</span>
@@ -37,7 +39,7 @@
                       {% else %}
                       {{user}}
                       <a href="{{url_for('logout')}}" id="cerrar_sesion">Cerrar sesion</a>
-                      <a href="{{url_for('add_Pelicula')}}" id="agregar_pelicula">Agregar Pelicula</a>
+                      <a href="{{url_for('agregarPelicula')}}" id="agregar_pelicula">Agregar Pelicula</a>
                       {% endif %}
                     </div>
                     </div>
@@ -67,5 +69,7 @@
             <footer>
             </footer>
         </div>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/estilos_index.css')}}">
+        <script src="{{url_for('static', filename='js/js.js')}}"></script>
     </body>
 </html>

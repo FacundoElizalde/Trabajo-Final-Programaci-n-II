@@ -67,5 +67,38 @@ def pelisConImg():
 
 def retPeli(peli):
     for i in moviesFiles():
-        if i["nombre"] == peli:
+        if i["Nombre"] == peli:
             return i
+        
+def siHayComentarios(nombrePeli):
+  movies = moviesFiles()
+  for movie in movies:
+    if movie['Nombre'] == nombrePeli:
+      if len(movie['Comentarios']) > 0:
+        return 1
+      else:
+        return 2
+
+def eliminarPeli(peli):
+  movies = moviesFiles()
+  for movie in movies:
+    if movie['Nombre'] == peli:
+      movies.remove(movie)
+  with open('./json/peliculas.json', 'w') as f:
+    json.dump(movies, f, indent=4)
+    f.close()
+
+def update(peli):
+  dataMovies = moviesFiles()
+  for movie in dataMovies:
+    if peli["Id"] == movie["Id"]:
+      movie["Nombre"] = peli["Nombre"]
+      movie["Anio"] = peli["Anio"]
+      movie["Fecha_Estreno"] = peli["Fecha_Estreno"]
+      movie["Director"] = peli["Director"]
+      movie["Genero"] = peli["Genero"]
+      movie["img"] = peli["img"]
+      movie["Sinopsis"] = peli["Sinopsis"]
+  with open('./json/peliculas.json', "w") as file:
+   json.dump(dataMovies, file, indent=4)
+   file.close()

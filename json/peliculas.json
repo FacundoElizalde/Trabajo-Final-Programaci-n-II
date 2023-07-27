@@ -130,5 +130,21 @@
         "img": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
         "Comentarios": [],
         "Sinopsis": "Forrest Gump, un joven sure\u00f1o, tenaz e inocente, es protagonista de acontecimientos cruciales en la historia de los Estados Unidos."
+    },
+    {
+        "id": "8c16b607acedcf38338c9e80f5f71e495806b7c4634776c367ec4f393d0c6e8c",
+        "Nombre": "Back to the Future",
+        "Anio": "1989",
+        "Fecha_Estreno": "28 de Diciembre",
+        "Director": "Robert Zemeckis",
+        "Genero": "Ciencia Ficcion",
+        "img": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+        "Comentarios": [
+            {
+                "idComent": "c202a28809188639822a15975eca9c078f566bd35a2da784a4944bf79c55c789",
+                "opinion": "Gran Pelicula, uno de los grandes clasicos del cine"
+            }
+        ],
+        "sinopsis": "Un adolescente y un inventor extravagante viajan al pasado y al futuro para alterar una serie de eventos desastrosos."
     }
 ]
