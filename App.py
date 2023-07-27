@@ -8,18 +8,13 @@ app.secret_key = 'c13d6b2d33bc0b22412c0c723fe5acdd2fb3c941052ce7aed61be9e6cb457d
 
 @app.route("/")
 def retornar():
-  return redirect(url_for("index"),Response=HTTPStatus.OK) 
+  return redirect(url_for("index"),Response=HTTPStatus.OK)
 
 @app.route("/peliculas.html",methods=["GET"])
 @app.route("/peliculas",methods=["GET"])
 def index():
-  if 'username' in session:
-    user = session['username']
-  else:
-    user = ""
-  return Response (render_template("peliculas.html", user=user, 
-  nombre_peliculas=funciones.funciones.nombresPeliculas(), 
-  imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
+  return Response (render_template("peliculas.html", user=funciones.funciones.verify(), 
+  nombre_peliculas=funciones.funciones.nombresPeliculas(), imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
 
 @app.route("/buscar/<int:info>",methods=["GET"])
 @app.route("/buscar/<info>",methods=["GET"])
@@ -43,11 +38,10 @@ def buscar(info):
 
 @app.route("/buscar", methods=["POST"])
 def buscar_post():
-
     informacion=request.form["info_buscar"]
-
     return redirect(url_for("buscar", info=informacion, next="edit"), Response=HTTPStatus.OK) 
 
+@app.route('/login', methods=['GET', 'POST'])
 @app.route('/perfil', methods=['GET', 'POST'])
 def login():
   if 'username' in session:
@@ -64,13 +58,11 @@ def login():
         user = dataUser['username']
       else:
         user = ""
-    return Response (render_template("peliculas.html", user=user, 
-    nombre_peliculas=funciones.funciones.nombresPeliculas(), 
+    return Response (render_template("peliculas.html", user=user, nombre_peliculas=funciones.funciones.nombresPeliculas(), 
     imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
   return render_template('perfil.html')
 
 @app.route('/logout')
-
 def logout():
   session.pop('username', None)
   return redirect(url_for('index'))
@@ -79,31 +71,35 @@ def logout():
 def pelicula(nombrePelicula):
   pelis = funciones.funciones.moviesFiles()
   for peli in pelis:
-    if peli["Nombre"] == nombrePelicula:
+    if peli["nombre"] == nombrePelicula:
       unaPeli = peli
       return render_template('comentarios.html', unaPeli=unaPeli, user=funciones.funciones.verify())
   
-@app.route('/pelicula/agregar', methods=['GET', 'POST'])
+@app.route('/pelicula/add', methods=['GET', 'POST'])
 def add_Pelicula():
   if request.method == 'POST':
     pelicula = {
         "id":secrets.token_hex(),
-        "nombre":request.form['Nombre'],
-        "anio":request.form['Anio'],
-        "fecha_estreno":request.form['Estreno'],
-        "director":request.form['Director'],
-        "genero":request.form['Genero'],
-        "img":request.form['img'],
+        "nombre":request.form['nombre'],
+        "anio":request.form['anio'],
+        "fecha_estreno":request.form['estreno'],
+        "director":request.form['director'],
+        "genero":request.form['genero'],
+        "img":request.form['imagen'],
         "comentarios":[
           {
             "idComent":secrets.token_hex(),
             "opinion":request.form['opinion']
           }
         ],
-        "sinopsis":request.form['Sinopsis']
+        "sinopsis":request.form['sinopsis']
     }
-    funciones.funciones.agregarPeliculas(pelicula, session['username'])
-  return render_template('agregarPeli.html', directores=funciones.funciones.directores, generos=funciones.funciones.generos)
+    funciones.funciones.add_Pelicula(pelicula, session['username'])
+  return render_template('add__pelicula.html', directores=funciones.funciones.Directores, generos=funciones.funciones.Generos)
+
+@app.route("/pelicula/edit/<movie>",methods=["GET","POST"])
+def editarPeli(peli):
+  return render_template("edit_pelicula.html")
 
 if __name__ == "__main__":
-  app.run(debug=True)
+    app.run(debug=True)

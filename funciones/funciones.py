@@ -1,8 +1,9 @@
 import json
 from flask import session
 
-Generos = [ ]
-Directores = [ ]
+Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror", "Western", "Documental", "Musical", "Thriller", "Epico", "Belico"]
+Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee"
+             "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis"]
 
 def moviesFiles():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
