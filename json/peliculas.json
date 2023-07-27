@@ -1,25 +1,25 @@
 [
     {
-        "Id":"1",
+        "Id": "1",
         "Nombre": "Fast and Furious X",
-        "Anio":2023,
-        "Fecha_Estreno":"18 de Mayo",
-        "Director":"Louis Leterrier",
+        "Anio": 2023,
+        "Fecha_Estreno": "18 de Mayo",
+        "Director": "Louis Leterrier",
         "Genero": "Accion",
-        "img":"https://pics.filmaffinity.com/fast_x-854185380-large.jpg",
-        "Comentarios":[ ],
-        "Sinopsis":"Dom Toretto y sus familias se enfrentan al peor enemigo imaginable, uno llegado desde el pasado con sed de venganza, dispuesto a cualquier cosa con tal de destruir todo aquello que Dom ama."
+        "img": "https://pics.filmaffinity.com/fast_x-854185380-large.jpg",
+        "Comentarios": [],
+        "Sinopsis": "Dom Toretto y sus familias se enfrentan al peor enemigo imaginable, uno llegado desde el pasado con sed de venganza, dispuesto a cualquier cosa con tal de destruir todo aquello que Dom ama."
     },
     {
-        "Id":"2",
+        "Id": "2",
         "Nombre": "Barbie",
         "Anio": 2023,
-        "Fecha_Estreno":"20 de Julio",
+        "Fecha_Estreno": "20 de Julio",
         "Director": "Greta Gerwig",
         "Genero": " Comedia",
         "img": "https://www.lahiguera.net/cinemania/pelicula/10297/barbie-cartel-11222.jpg",
-        "Comentarios":[ ],
-        "Sinopsis": "Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
+        "Comentarios": [],
+        "Sinopsis": "Despu\u00e9s de ser expulsada de Barbieland por no ser una mu\u00f1eca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
     },
     {
         "Id": "3",
@@ -27,10 +27,10 @@
         "Anio": 2023,
         "Fecha_Estreno": "20 de Julio",
         "Director": "Christoper Nolan",
-        "Genero": "Ciencia Ficción",
+        "Genero": "Ciencia Ficci\u00f3n",
         "img": "https://x-surcine.com/wp-content/uploads/2023/07/JPG000ax-4.jpg",
-        "Comentarios":[ ],
-        "Sinopsis": "El físico J Robert Oppenheimer trabaja con un equipo de científicos durante el Proyecto Manhattan, que condujo al desarrollo de la bomba atómica."
+        "Comentarios": [],
+        "Sinopsis": "El f\u00edsico J Robert Oppenheimer trabaja con un equipo de cient\u00edficos durante el Proyecto Manhattan, que condujo al desarrollo de la bomba at\u00f3mica."
     },
     {
         "Id": "4",
@@ -40,8 +40,8 @@
         "Director": "Christoper Nolan",
         "Genero": "Accion",
         "img": "https://i.ebayimg.com/images/g/lpUAAOSwgZJfjIhO/s-l1600.jpg",
-        "Comentarios":[ ],
-        "Sinopsis": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía."
+        "Comentarios": [],
+        "Sinopsis": "Batman tiene que mantener el equilibrio entre el hero\u00edsmo y el vigilantismo para pelear contra un vil criminal conocido como el Guas\u00f3n, que pretende sumir Ciudad G\u00f3tica en la anarqu\u00eda."
     },
     {
         "Id": "5",
@@ -51,8 +51,8 @@
         "Director": "Francis Ford Coppola",
         "Genero": "Drama",
         "img": "https://musicart.xboxlive.com/7/77295200-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
-        "Comentarios":[ ],
-        "Sinopsis": "Una adaptación ganadora del Premio de la Academia, de la novela de Mario Puzo acerca de la familia Corleone."
+        "Comentarios": [],
+        "Sinopsis": "Una adaptaci\u00f3n ganadora del Premio de la Academia, de la novela de Mario Puzo acerca de la familia Corleone."
     },
     {
         "Id": "6",
@@ -62,8 +62,8 @@
         "Director": "Jaume Collet-Serra",
         "Genero": "Accion",
         "img": "https://es.web.img2.acsta.net/pictures/22/10/07/16/48/1142280.jpg",
-        "Comentarios":[ ] ,
-        "Sinopsis": "Unos arqueólogos liberan de su tumba a Black Adam, quien llevaba 5000 años preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despertó." 
+        "Comentarios": [],
+        "Sinopsis": "Unos arque\u00f3logos liberan de su tumba a Black Adam, quien llevaba 5000 a\u00f1os preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despert\u00f3."
     },
     {
         "Id": "7",
@@ -73,8 +73,8 @@
         "Director": "Jung Su-yee",
         "Genero": "Documental",
         "img": "https://pics.filmaffinity.com/Blackpink_la_pelaicula-249752835-large.jpg",
-        "Comentarios":[ ],
-        "Sinopsis": "Entrevistas exclusivas y material inédito de los cinco años de trayectoria de Blackpink, el grupo de pop coreano compuesto por Jennie, Lisa, Rosé y Ji-Soo."
+        "Comentarios": [],
+        "Sinopsis": "Entrevistas exclusivas y material in\u00e9dito de los cinco a\u00f1os de trayectoria de Blackpink, el grupo de pop coreano compuesto por Jennie, Lisa, Ros\u00e9 y Ji-Soo."
     },
     {
         "Id": "8",
@@ -84,8 +84,8 @@
         "Director": "Steven Caple Jr.",
         "Genero": "Accion",
         "img": "https://pics.filmaffinity.com/Transformers_El_despertar_de_las_bestias-314641307-large.jpg",
-        "Comentarios":[ ] ,
-        "Sinopsis": "Durante la década de 1990, los Maximals, Predacons y Terrorcons se unen a la batalla existente en la Tierra entre Autobots y Decepticons."
+        "Comentarios": [],
+        "Sinopsis": "Durante la d\u00e9cada de 1990, los Maximals, Predacons y Terrorcons se unen a la batalla existente en la Tierra entre Autobots y Decepticons."
     },
     {
         "Id": "9",
@@ -95,8 +95,8 @@
         "Director": "Francis Ford Coppola",
         "Genero": "Drama",
         "img": "https://m.media-amazon.com/images/I/71Tn5ZErDiL._RI_.jpg",
-        "Comentarios":[ ] ,
-        "Sinopsis": "Michael Corleone lidera el imperio criminal de su padre, mientras que se recuerda el ascenso al poder del joven Vito." 
+        "Comentarios": [],
+        "Sinopsis": "Michael Corleone lidera el imperio criminal de su padre, mientras que se recuerda el ascenso al poder del joven Vito."
     },
     {
         "Id": "10",
@@ -106,8 +106,8 @@
         "Director": "Francis Ford Coppola",
         "Genero": "Drama",
         "img": "https://m.media-amazon.com/images/M/MV5BNWFlYWY2YjYtNjdhNi00MzVlLTg2MTMtMWExNzg4NmM5NmEzXkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_.jpg",
-        "Comentarios":[ ] ,
-        "Sinopsis": "Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar todas las posesiones de la familia negociando con el Vaticano. Después de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios."
+        "Comentarios": [],
+        "Sinopsis": "Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar todas las posesiones de la familia negociando con el Vaticano. Despu\u00e9s de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios."
     },
     {
         "Id": "11",
@@ -117,7 +117,7 @@
         "Director": "Stanley Kubrick",
         "Genero": "Drama",
         "img": "https://cdn.culturagenial.com/es/imagenes/1971-a-clockwork-orange.jpg",
-        "Comentarios":[ ] ,
+        "Comentarios": [],
         "Sinopsis": "Un criminal en la Inglaterra del futuro pasa una serie de procesos experimentales para corregir sus impulsos violentos."
     },
     {
@@ -128,7 +128,7 @@
         "Director": "Robert Zemeckis",
         "Genero": "Drama",
         "img": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
-        "Comentarios":[ ] ,
-        "Sinopsis": "Forrest Gump, un joven sureño, tenaz e inocente, es protagonista de acontecimientos cruciales en la historia de los Estados Unidos."
+        "Comentarios": [],
+        "Sinopsis": "Forrest Gump, un joven sure\u00f1o, tenaz e inocente, es protagonista de acontecimientos cruciales en la historia de los Estados Unidos."
     }
 ]

@@ -1,18 +1,18 @@
 [
     {
-        "Nombre":"Tomas",
-        "Apellido":"Durso",
-        "Usuario":"TomyDurso22",
-        "Id":"1",
-        "Peliculas_Comentadas":[ ],
-        "Contrasenia":"VamoGimnasia22"
+        "Nombre": "Tomas",
+        "Apellido": "Durso",
+        "Usuario": "TomyDurso22",
+        "Id": "1",
+        "Peliculas_Comentadas": [],
+        "Contrasenia": "VamoGimnasia22"
     },
     {
         "Nombre": "Roman",
         "Apellido": "Grosjean",
         "Usuario": "Catchingfire2020",
         "Id": "2",
-        "Peliculas_Comentadas":[ ],
+        "Peliculas_Comentadas": [],
         "Contrasenia": "fire_ball"
     },
     {
@@ -20,7 +20,7 @@
         "Apellido": "Messi",
         "Usuario": "leomessi10",
         "Id": "3",
-        "Peliculas_Comentadas":[ ],
+        "Peliculas_Comentadas": [],
         "Contrasenia": "qatar2022elijocreer"
     },
     {
@@ -28,7 +28,7 @@
         "Apellido": "Mattikainen",
         "Usuario": "RallyLegend25",
         "Id": "4",
-        "Peliculas_Comentadas":[ ],
+        "Peliculas_Comentadas": [],
         "Contrasenia": "MatinsenJensen67"
     },
     {
@@ -36,7 +36,7 @@
         "Apellido": "Park",
         "Usuario": "zyozyo",
         "Id": "5",
-        "Peliculas_Comentadas":[ ],
+        "Peliculas_Comentadas": [],
         "Contrasenia": "oneinamillion"
     },
     {
@@ -44,7 +44,13 @@
         "Apellido": "Perez",
         "Usuario": "Administrador",
         "Id": "6",
-        "Peliculas_Comentadas":[ ],
-        "Contrasenia": "abc123"
+        "Peliculas_Comentadas": [],
+        "Contrasenia": "abc123",
+        "peliculas_comentadas": [
+            {
+                "idPeli": "74c0847c64fec5ba05a135548695db5c988db36877f11bcdb2cbf7ac337ad11d",
+                "idComentario": "b2d1612abc0fefddc038afb6b4a5f12822afaefc146375268aa5e5f899550735"
+            }
+        ]
     }
 ]

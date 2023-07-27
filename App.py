@@ -39,7 +39,19 @@ def buscar(info):
 @app.route("/buscar", methods=["POST"])
 def buscar_post():
     informacion=request.form["info_buscar"]
-    return redirect(url_for("buscar", info=informacion, next="edit"), Response=HTTPStatus.OK) 
+    return redirect(url_for("buscar", info=informacion, next="edit"), Response=HTTPStatus.OK)
+
+@app.route("/directores")
+def directores():
+  return Response (render_template("dirandgen.html",directores=funciones.funciones.Directores),status=HTTPStatus.OK)
+
+@app.route("/generos")
+def generos():
+  return Response (render_template("dirandgen.html",generos=funciones.funciones.Generos),status=HTTPStatus.OK)
+
+@app.route("/imagenes")
+def imagenes():
+  return Response (render_template("dirandgen.html",imagenes=funciones.funciones.pelisConImg()),status=HTTPStatus.OK)
 
 @app.route('/login', methods=['GET', 'POST'])
 @app.route('/perfil', methods=['GET', 'POST'])
@@ -95,10 +107,10 @@ def add_Pelicula():
         "sinopsis":request.form['sinopsis']
     }
     funciones.funciones.add_Pelicula(pelicula, session['username'])
-  return render_template('add__pelicula.html', directores=funciones.funciones.Directores, generos=funciones.funciones.Generos)
+  return render_template('add_pelicula.html', directores=funciones.funciones.Directores, generos=funciones.funciones.Generos)
 
 @app.route("/pelicula/edit/<movie>",methods=["GET","POST"])
-def editarPeli(peli):
+def edit_pelicula(peli):
   return render_template("edit_pelicula.html")
 
 if __name__ == "__main__":

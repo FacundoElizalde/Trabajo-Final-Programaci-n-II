@@ -1,5 +1,21 @@
 {% extends './peliculas.html' %}
 
 {% block content %}
+<h1>{{unaPeli.nombre}}</h1>
+<img src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}">
+<p>{{unaPeli.director}}</p>
+<p>{{unaPeli.anio}}</p>
+<p>{{unaPeli.fecha_estreno}}</p>
+<p>{{unaPeli.sinopsis}}</p>
 
+{% for comentario in unaPeli.comentarios%}
+  <p>{{comentario.comentario}}</p>
+{% endfor %}
+
+<p>/pelicula/editar/{{unaPeli.nombre}}</p>
+<div>
+  <form action="/pelicula/editar/{{ unaPeli.nombre }}">
+    <button>editar</button>
+    <input type="submit">
+  </form>
 {% endblock %}

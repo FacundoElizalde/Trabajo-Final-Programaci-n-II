@@ -2,8 +2,9 @@ import json
 from flask import session
 
 Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror", "Western", "Documental", "Musical", "Thriller", "Epico", "Belico"]
-Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee"
+Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee",
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis"]
+
 
 def moviesFiles():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
@@ -31,17 +32,17 @@ def imgPeliculas():
       img.append(i["img"])
   return img
 
-def add_Pelicula(pelicula, userSession):
+def agregarPeliculas(pelicula, userSession):
   movies = moviesFiles()
   movies.append(pelicula)
   with open('./json/peliculas.json', 'w') as f:
     json.dump(movies, f, indent=4)
     f.close()
-  for idCom in pelicula['comentarios']:
+  for idCom in pelicula['Comentarios']:
     idComentario = idCom['idComent']
   users = usersFiles()
   for user in users:
-    if userSession == user['usuario']:
+    if userSession == user['Usuario']:
       user['peliculas_comentadas'] = [{
         "idPeli":pelicula['id'],
         "idComentario":idComentario
@@ -56,3 +57,10 @@ def verify():
   else:
     user = ""
   return user
+
+def pelisConImg():
+  imagenes=[]
+  for i in moviesFiles():
+    if i["img"]!="":
+      imagenes.append(i["Nombre"])
+  return imagenes
