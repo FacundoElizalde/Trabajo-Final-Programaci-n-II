@@ -29,11 +29,17 @@
                     </div>
 
                     <div>
+                    {% if user == "" %}
                       <a href="{{url_for('login')}}">
                         <button id="btn-perfil"> 
                           <span class="material-icons">manage_accounts</span>
                         </button>
                       </a>
+                      {% else %}
+                      {{user}}
+                      <a href="{{url_for('logout')}}">Cerrar sesion</a>
+                      {% endif %}
+                    </div>
                     </div>
                 </nav>
             </header>
@@ -41,23 +47,24 @@
             <hr>
 
             <main>
+                {% block content %}
                 <article>
                     <div class="articulos">
-                        {% block content %}
                             {% if nombre_peliculas|length > 0 %}
                                 {% for i in range(nombre_peliculas|length) %}
                                     <div id="{{i}}">
-                                        <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px">
-                                        <p> {{ nombre_peliculas[i] }}</p>
+                                        <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px"> 
+                                        <a name="{{ nombre_peliculas[i] }}" href="/pelicula">{{ nombre_peliculas[i] }}</a>
+                                        <p>{{ nombre_peliculas[i] }}</p>
                                     </div>
                                 {% endfor %}
 
                             {% else %}
                                 <h1>No hay coincidencias de busqueda</h1>
                             {% endif %}
-                        {% endblock %}
-                    </div>
-                </article>
+                        </div>
+                    </article>
+                {% endblock %}
             </main>
             <footer>
             </footer>
