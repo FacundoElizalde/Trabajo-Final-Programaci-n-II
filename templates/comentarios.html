@@ -1,12 +1,12 @@
 {% extends './peliculas.html' %}
 
 {% block content %}
-<h1>{{unaPeli.Nombre}}</h1>
-<img src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}">
-<p>{{unaPeli.Director}}</p>
-<p>{{unaPeli.Anio}}</p>
-<p>{{unaPeli.Fecha_Estreno}}</p>
-<p>{{unaPeli.Sinopsis}}</p>
+<h1>{{unaPeli.nombre}}</h1>
+<img src="{{unaPeli.img}}" alt="{{unaPeli.Nombre}}">
+<p>{{unaPeli.director}}</p>
+<p>{{unaPeli.anio}}</p>
+<p>{{unaPeli.fecha_estreno}}</p>
+<p>{{unaPeli.sinopsis}}</p>
 
 {% for comentario in unaPeli.comentarios%}
   <p><strong>{{comentario['Usuario']}}: </strong>{{comentario.Comentario}}</p>
@@ -14,9 +14,18 @@
 {% if user == "" %}
 <span></span>
 {% else %}
+
+<div>
+  <form method="POST">
+    <label for="hacer-comentario">Tu opinion sobre la pelicula: </label>
+    <textarea name="comentario" id="" cols="50" rows="7"></textarea>
+    <input type="submit" value="Enviar comentario">
+  </form>
+</div>
+
 <div>
   <form action="/pelicula/editar/{{ unaPeli.nombre }}">
-    <input type="submit" value="Editar">
+    <input type="submit" value="Editar {{unaPeli.nombre}}">
   </form>
 </div>
 {% if comentarios == 1 %}
@@ -24,7 +33,7 @@
 {% else %}
 <div>
   <form action="/pelicula/eliminar/{{ unaPeli.nombre }}">
-    <input type="submit" value="Eliminar">
+    <input type="submit" value="Eliminar {{unaPeli.nombre}}">
   </form>
 </div>
 {% endif%}

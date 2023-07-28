@@ -33,7 +33,8 @@ def buscar(info):
 
     return Response (render_template("peliculas.html",
       nombre_peliculas=[i["Nombre"] for i in lista_encontradas],
-      imagenes_peliculas=[i["img"] for i in lista_encontradas]),
+      imagenes_peliculas=[i["img"] for i in lista_encontradas],
+      user=funciones.funciones.verify()),
       status = HTTPStatus.OK)
 
 @app.route("/buscar", methods=["POST"])
@@ -78,12 +79,20 @@ def logout():
 
 @app.route('/pelicula/<nombrePelicula>')
 def pelicula(nombrePelicula):
-  pelis = funciones.funciones.moviesFiles()
-  for peli in pelis:
+  if request.method == "POST":
+    coment = {
+      "Usuario":session["username"],
+      "Comentario":request.form["comentario"]
+    }
+    funciones.funciones.hacerComentario(coment, nombrePelicula)
+    return redirect(url_for('index'))
+  
+  movies = funciones.funciones.moviesFiles()
+  for peli in movies:
     if peli["Nombre"] == nombrePelicula:
       unaPeli = peli
       return render_template('comentarios.html', unaPeli=unaPeli, 
-      user=funciones.funciones.verify(), comentarios=funciones.funciones.siHayComentarios(nombrePelicula))
+    user=funciones.funciones.verify(), comentarios=funciones.funciones.siHayComentarios(nombrePelicula))
   
 @app.route('/pelicula/agregar', methods=['GET', 'POST'])
 def agregarPelicula():
