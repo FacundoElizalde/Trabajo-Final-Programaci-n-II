@@ -1,40 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="shortcut icon" href="https://images.emojiterra.com/google/android-12l/512px/1f37f.png">
-        <link rel="stylesheet" href="../static/css/e_perfil.css">
-        <title>CINEREVIEW PERFIL</title>
-        <meta charset="utf-8">
-    </head>
-
-    <body>
-        <div id="contenedor">
-            <header>
-                <nav>
-                    <form method="get" action="peliculas">
-                        <button class="boton-menu"> 
-                            <p>Inicio</p>
-                        </button>
-                    </form> 
-
-                    <form method="get" action="perfil">
-                        <button class="boton-menu"> 
-                            <p>Perfil</p>
-                        </button>
-                    </form> 
-                    
-                </nav>
-            </header>
-
-            <main>
-              <form method="POST">
-                <label for="username">Nombre de usuario</label>
-                <input type="text" placeholder="Usuario" name="username" required autofocus>
-                <label for="password">Contraseña</label>
-                <input type="password" placeholder="Tu contraseña" name="password" required>
-                <input type="submit">
-              </form>
-            </main>
-        </div>
-    </body>
-</html>
+{% extends './peliculas.html' %}
+{% block content %}
+<form method="POST">
+  <label for="username">Nombre de usuario</label>
+  <input type="text" placeholder="Usuario" name="username" required autofocus>
+  <label for="password">Contraseña</label>
+  <input type="password" placeholder="Tu contraseña" name="password" required>
+  <input type="submit">
+</form>
+{% endblock %}
