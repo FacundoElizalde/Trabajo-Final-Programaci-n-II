@@ -1,6 +1,6 @@
 [
     {
-        "Id": "1",
+        "Id": "U7DZLWNrUe3VrHwW9fTzs1jBnMmNvPATaVT69NdjYqqAapEPj60pGkV9uMvX3qZa",
         "Nombre": "Fast and Furious X",
         "Anio": 2023,
         "Fecha_Estreno": "18 de Mayo",
@@ -11,7 +11,7 @@
         "Sinopsis": "Dom Toretto y sus familias se enfrentan al peor enemigo imaginable, uno llegado desde el pasado con sed de venganza, dispuesto a cualquier cosa con tal de destruir todo aquello que Dom ama."
     },
     {
-        "Id": "2",
+        "Id": "yTWuhvKBvTLC0oVj5YKj4qzQi4E56Qr15fXmJqRroB7dHqNZpo2baqwnUy61TQUE",
         "Nombre": "Barbie",
         "Anio": 2023,
         "Fecha_Estreno": "20 de Julio",
@@ -22,7 +22,7 @@
         "Sinopsis": "Despu\u00e9s de ser expulsada de Barbieland por no ser una mu\u00f1eca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
     },
     {
-        "Id": "3",
+        "Id": "ezv1D6uKTDDGcyyq2oqVfpDzAt37yThxJrUZ90twc6JtoUce42YDijLVtyNyvh2z",
         "Nombre": "Oppenheimer",
         "Anio": 2023,
         "Fecha_Estreno": "20 de Julio",
@@ -33,7 +33,7 @@
         "Sinopsis": "El f\u00edsico J Robert Oppenheimer trabaja con un equipo de cient\u00edficos durante el Proyecto Manhattan, que condujo al desarrollo de la bomba at\u00f3mica."
     },
     {
-        "Id": "4",
+        "Id": "fwcYw0R7yszkfAzFjtzNzg36XD96qU1JJM0Lcg0mxvNEg0V8juN2mUnwD1WyX4kY",
         "Nombre": "Batman: The Dark Knight",
         "Anio": 2008,
         "Fecha_Estreno": "17 de Julio",
@@ -44,7 +44,7 @@
         "Sinopsis": "Batman tiene que mantener el equilibrio entre el hero\u00edsmo y el vigilantismo para pelear contra un vil criminal conocido como el Guas\u00f3n, que pretende sumir Ciudad G\u00f3tica en la anarqu\u00eda."
     },
     {
-        "Id": "5",
+        "Id": "VbckGrm97dGnNmLZaaxiBbj685p6LaUuMyQTtkgwivYvTf50VuoT7JNHgfV2ph7Q",
         "Nombre": "The Godfather",
         "Anio": 1972,
         "Fecha_Estreno": "20 de Septiembre",
@@ -55,7 +55,7 @@
         "Sinopsis": "Una adaptaci\u00f3n ganadora del Premio de la Academia, de la novela de Mario Puzo acerca de la familia Corleone."
     },
     {
-        "Id": "6",
+        "Id": "oCsJH2kTt0kjyXpV7ePAfBkK4y8MfywyCppY5Y5vjeD6r5gH9dLbLyJ2P3da9eEk",
         "Nombre": "Black Adam",
         "Anio": 2022,
         "Fecha_Estreno": "21 de Octubre",
@@ -66,7 +66,7 @@
         "Sinopsis": "Unos arque\u00f3logos liberan de su tumba a Black Adam, quien llevaba 5000 a\u00f1os preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despert\u00f3."
     },
     {
-        "Id": "7",
+        "Id": "x3rtsxfdQcJEZZdWz6LHdUqyMpvkUfy5sBjRqCJdUxAC7hTUTB46LfKE3gsujXty",
         "Nombre": "Blackpink: The Movie",
         "Anio": 2022,
         "Fecha_Estreno": "4 de Agosto",
@@ -77,7 +77,7 @@
         "Sinopsis": "Entrevistas exclusivas y material in\u00e9dito de los cinco a\u00f1os de trayectoria de Blackpink, el grupo de pop coreano compuesto por Jennie, Lisa, Ros\u00e9 y Ji-Soo."
     },
     {
-        "Id": "8",
+        "Id": "vF8FuVX1oJqLfjMsBTQYgJWwV6Q17Cbj6GEemAb2i0dDcunD2BJvyyEwenY8QwEF",
         "Nombre": "Transformers 7",
         "Anio": 2023,
         "Fecha_Estreno": "8 de Junio",
@@ -88,7 +88,7 @@
         "Sinopsis": "Durante la d\u00e9cada de 1990, los Maximals, Predacons y Terrorcons se unen a la batalla existente en la Tierra entre Autobots y Decepticons."
     },
     {
-        "Id": "9",
+        "Id": "u5V5WnC9A7mJE5yfhYeTZPzhQBvFtZrE3BQRMCEBNrQrJevgcH0Z2VTjFGK0Ga4f",
         "Nombre": "The Godfather II",
         "Anio": 1974,
         "Fecha_Estreno": "26 de Diciembre",
@@ -99,7 +99,7 @@
         "Sinopsis": "Michael Corleone lidera el imperio criminal de su padre, mientras que se recuerda el ascenso al poder del joven Vito."
     },
     {
-        "Id": "10",
+        "Id": "PuakV04vtfyFQgtgTyWdUHhKUEDuZaFYMPTrhaQtoVyX4vi4Qb1ouJ88UBr6JFm5",
         "Nombre": "The Godfather III",
         "Anio": 1991,
         "Fecha_Estreno": "16 de Mayo",
@@ -110,7 +110,7 @@
         "Sinopsis": "Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar todas las posesiones de la familia negociando con el Vaticano. Despu\u00e9s de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios."
     },
     {
-        "Id": "11",
+        "Id": "sPgzZDqg78JwwDGYFQGtQcR4R3YsZhVrFPQNZkD2ND5r8Wx1ndauXBuDEuQ3CYoh",
         "Nombre": "Clockwork Orange",
         "Anio": 1985,
         "Fecha_Estreno": "25 de Julio",
@@ -121,7 +121,7 @@
         "Sinopsis": "Un criminal en la Inglaterra del futuro pasa una serie de procesos experimentales para corregir sus impulsos violentos."
     },
     {
-        "Id": "12",
+        "Id": "5b4fv5XKeQkLvTAnChybQucXaQUpPkGLdqaLRAaE6hJz5BJZt7n3nbQtmVaKb7VU",
         "Nombre": "Forrest Gump",
         "Anio": 1994,
         "Fecha_Estreno": "6 de Octubre",
@@ -142,9 +142,25 @@
         "Comentarios": [
             {
                 "idComent": "c202a28809188639822a15975eca9c078f566bd35a2da784a4944bf79c55c789",
-                "opinion": "Gran Pelicula, uno de los grandes clasicos del cine"
+                "opinion": "Gran Pelicula, uno de los grandes clasicos del cine."
             }
         ],
         "sinopsis": "Un adolescente y un inventor extravagante viajan al pasado y al futuro para alterar una serie de eventos desastrosos."
+    },
+    {
+        "id": "e39114e33fc975227c5352fa24e627be323c9a4c1d9cabe65a2e3d5ecb713756",
+        "Nombre": "Ford v Ferrari",
+        "Anio": "2019",
+        "Fecha_Estreno": "30 de Agosto",
+        "Director": "James Mangold",
+        "Genero": "Deportes",
+        "img": "https://i.pinimg.com/originals/d6/1c/8d/d61c8ddd0d6decdbd40ee3acc4385fc7.png",
+        "Comentarios": [
+            {
+                "idComent": "84a585a5060952c54a19d2ce90ebc62acaafe3300ac5031a07866a1534798069",
+                "opinion": "Sin dudas una pelicula excelente que narra una de las mejores rivalidades en la historia del automovilismo."
+            }
+        ],
+        "sinopsis": "El visionario Carroll Shelby y el conductor brit\u00e1nico Ken Miles reciben la misi\u00f3n de construir un nuevo autom\u00f3vil con el fin de derrocar el dominio de Ferrari en el Campeonato del Mundo de Le Mans de 1966."
     }
 ]

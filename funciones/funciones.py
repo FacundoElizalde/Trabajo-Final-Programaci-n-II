@@ -1,9 +1,10 @@
 import json
 from flask import session
 
-Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror", "Western", "Documental", "Musical", "Thriller", "Epico", "Belico"]
+Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror", "Western", "Documental", "Musical", "Thriller", 
+           "Epico", "Belico", "Deportes"]
 Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee",
-             "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis"]
+             "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold"]
 
 
 def moviesFiles():

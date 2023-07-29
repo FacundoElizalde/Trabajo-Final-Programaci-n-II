@@ -1,6 +1,6 @@
-const eliminar = document.querySelector(".eliminarPeli");
+const eliminar = document.querySelector(".del_pelicula");
 const eliminacion = document.querySelector("#eliminacion");
-const editar = document.querySelector('.editarPeli');
+const editar = document.querySelector('.edit_pelicula');
 const edicion = document.querySelector('#edicion');
 document.addEventListener('DOMContentLoaded',e => {
   if (e.path[0].URL.includes("http://127.0.0.1:5000/pelicula/editar/")) {
@@ -58,60 +58,17 @@ async function init(inicio){
         <div>
             <label for="nombre">Directores disponibles</label>
             <select name="director" required>
-              <option disabled selected>Director</option>
-              <option value="Oriol Paulo">Oriol Paulo</option>
-              <option value="Gary Dauberman">Gary Dauberman</option>
-              <option value="Justin Lin">Justin Lin</option>
-              <option value="Chris Sanders, Dean DeBlois">Chris Sanders, Dean DeBlois</option>
-              <option value="Jim Sheridan">Jim Sheridan</option>
-              <option value="Joe Russo, Anthony Russo">Joe Russo, Anthony Russo</option>
-              <option value="Mel Gibson">Mel Gibson</option>
-              <option value="Luca Guadagnino">Luca Guadagnino</option>
-              <option value="Rian Johnson">Rian Johnson</option>
-              <option value="Ryan Coogler">Ryan Coogler</option>
-              <option value="Rodrigo Sorogoyen">Rodrigo Sorogoyen</option>
-              <option value="Elena López Riera">Elena López Riera</option>
-              <option value="David Owen Russell">David Owen Russell</option>
-              <option value="Álex de la Iglesia">Álex de la Iglesia</option>
-              <option value="Jaume Collet-Serra">Jaume Collet-Serra</option>
-              <option value="Isaki Lacuesta">Isaki Lacuesta</option>
-              <option value="Francois Ozon">Francois Ozon</option>
-              <option value="David Gordon Green">David Gordon Green</option>
-              <option value="Carlota Martínez Pereda, Carlota Pereda">Carlota Martínez Pereda, Carlota Pereda</option>
-              <option value="Jaime Rosales">Jaime Rosales</option>
-              <option value="Oriol Paulo">Oriol Paulo</option>
-              <option value="Juan Diego Botto">Juan Diego Botto</option>
-              <option value="Santiago Mitre">Santiago Mitre</option>
-              <option value="Alberto Rodríguez Librero">Alberto Rodríguez Librero</option>
+            <option value="Louis Leterrier">Louis Leterrier</option>
             </select>
           </div>
+
           <div>
             <label for="nombre">Generos disponibles</label>
             <select name="genero" required>
             <option value="accion">accion</option>
-            <option value="aventuras">aventuras</option>
-            <option value="ciencia ficcion">ciencia ficcion</option>
-            <option value="comedia">comedia</option>
-            <option value="documental">documental</option>
-            <option value="drama">drama</option>
-            <option value="fantasia">fantasia</option>
-            <option value="musical">musical</option>
-            <option value="suspenso">suspenso</option>
-            <option value="terror">terror</option>
-            <option value="cine mudo">cine mudo</option>
-            <option value="cine 2d">cine 2d</option>
-            <option value="cine 3d">cine 3d</option>
-            <option value="animacion">animacion</option>
-            <option value="religiosas">religiosas</option>
-            <option value="futuristas">futuristas</option>
-            <option value="policiacas">policiacas</option>
-            <option value="crimen">crimen</option>
-            <option value="belicas">belicas</option>
-            <option value="historicas">historicas</option>
-            <option value="deportivas">deportivas</option>
-            <option value="western">western</option>
             </select>
           </div>
+          
         <input type="submit" value="editar">
         `,
         clas:"edit_pelicula",

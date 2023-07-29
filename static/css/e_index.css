@@ -91,3 +91,7 @@ h1{
     padding: 4%;
     backdrop-filter: blur(7px);
 }
+.dirconteiner{
+    color: white;
+    font-family: Arial;
+}
