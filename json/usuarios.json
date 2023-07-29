@@ -5,7 +5,13 @@
         "Usuario": "TomyDurso22",
         "Id": "1",
         "Peliculas_Comentadas": [],
-        "Contrasenia": "VamoGimnasia22"
+        "Contrasenia": "VamoGimnasia22",
+        "peliculas_comentadas": [
+            {
+                "idPeli": "d373eeeff831a8769ba268b3b22b3cfc4f1c04ff95874654c8b5626e7c3db06b",
+                "idComentario": "64b359dcae1fef3315e10448681799766b2da2038b806a47777a41f3254a47c2"
+            }
+        ]
     },
     {
         "Nombre": "Roman",
@@ -37,7 +43,13 @@
         "Usuario": "zyozyo",
         "Id": "5",
         "Peliculas_Comentadas": [],
-        "Contrasenia": "oneinamillion"
+        "Contrasenia": "oneinamillion",
+        "peliculas_comentadas": [
+            {
+                "idPeli": "aa2b62ad23debda3fd7493039f64f199ec31c213775f4c2de4b2c45f006992ed",
+                "idComentario": "001837c7c9cc666729c97cc9b4feb54251bf913ef8f68c96a60720e641bd4d16"
+            }
+        ]
     },
     {
         "Nombre": "Jose",

@@ -99,6 +99,10 @@ h1{
     font-family: arial;
     color: white;
 }
+.form{
+    color: white;
+    font-family: Arial;
+}
 .form-container > div {
     display: flex;
     align-items: center;

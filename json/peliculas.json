@@ -162,5 +162,37 @@
             }
         ],
         "sinopsis": "El visionario Carroll Shelby y el conductor brit\u00e1nico Ken Miles reciben la misi\u00f3n de construir un nuevo autom\u00f3vil con el fin de derrocar el dominio de Ferrari en el Campeonato del Mundo de Le Mans de 1966."
+    },
+    {
+        "id": "aa2b62ad23debda3fd7493039f64f199ec31c213775f4c2de4b2c45f006992ed",
+        "Nombre": "The Wolf of Wall Street",
+        "Anio": "2013",
+        "Fecha_Estreno": "2 de Enero",
+        "Director": "Martin Scorsese",
+        "Genero": "Drama",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg",
+        "Comentarios": [
+            {
+                "idComent": "001837c7c9cc666729c97cc9b4feb54251bf913ef8f68c96a60720e641bd4d16",
+                "opinion": "Una de mis peliculas favoritas de este director, la actuacion de Di Caprio es digna de un \u00f3scar, una lastima que no se lo dieron."
+            }
+        ],
+        "sinopsis": "Jordan Belfort, corredor de bolsa de Nueva York, quien fund\u00f3 la compa\u00f1\u00eda Stratton Oakmont cuando a\u00fan era un veintea\u00f1ero, desarrolla h\u00e1bitos de exceso y corrupci\u00f3n."
+    },
+    {
+        "id": "d373eeeff831a8769ba268b3b22b3cfc4f1c04ff95874654c8b5626e7c3db06b",
+        "Nombre": "The Transporter",
+        "Anio": "2002",
+        "Fecha_Estreno": "2 de Octubre",
+        "Director": "Louis Leterrier",
+        "Genero": "Accion",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTk2NDc2MDAxN15BMl5BanBnXkFtZTYwNDc1NDY2._V1_FMjpg_UX1000_.jpg",
+        "Comentarios": [
+            {
+                "idComent": "64b359dcae1fef3315e10448681799766b2da2038b806a47777a41f3254a47c2",
+                "opinion": "Una de mis peliculas favoritas de Jason Statham."
+            }
+        ],
+        "sinopsis": "El exmilitar Frank Martin vive lo que parece ser una vida tranquila, prestando sus servicios como transportador, pero cuando rompe las tres reglas de conducta por las que se rige, la violencia vuelve a adue\u00f1arse de su vida."
     }
 ]
