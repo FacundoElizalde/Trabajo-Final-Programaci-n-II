@@ -2,8 +2,9 @@
 
 {% block content %}
 
-<h1>{{peli}}</h1>
-<button value="{{peli}}" class="delPeli">Eliminar Pelicula</button>
+<div class="box_eliminar">
+    <h1 id="del_pelicula_header">{{peli}}</h1>
+    <button value="{{peli}}" class="del_pelicula">Eliminar</button>
+</div>
 <div id="eliminacion"></div>
-
 {% endblock %}

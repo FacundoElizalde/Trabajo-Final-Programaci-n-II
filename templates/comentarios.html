@@ -1,41 +1,61 @@
 {% extends './peliculas.html' %}
 
 {% block content %}
-<h1>{{unaPeli.nombre}}</h1>
-<img src="{{unaPeli.img}}" alt="{{unaPeli.Nombre}}">
-<p>{{unaPeli.director}}</p>
-<p>{{unaPeli.anio}}</p>
-<p>{{unaPeli.fecha_estreno}}</p>
-<p>{{unaPeli.sinopsis}}</p>
 
-{% for comentario in unaPeli.comentarios%}
-  <p><strong>{{comentario['Usuario']}}: </strong>{{comentario.Comentario}}</p>
-{% endfor %}
-{% if user == "" %}
-<span></span>
-{% else %}
-
-<div>
-  <form method="POST">
-    <label for="hacer-comentario">Tu opinion sobre la pelicula: </label>
-    <textarea name="comentario" id="" cols="50" rows="7"></textarea>
-    <input type="submit" value="Enviar comentario">
-  </form>
+<div class="pelicula">
+  <div class="caja_comentarios"></div>
 </div>
 
-<div>
-  <form action="/pelicula/editar/{{ unaPeli.nombre }}">
-    <input type="submit" value="Editar {{unaPeli.nombre}}">
-  </form>
+<div class="info_pelicula">
+  <div class="img">
+    <img src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}" width="350px" height="700px">
+  </div>
+  <div class="info">
+    <h1>{{unaPeli.nombre}}</h1>
+
+    <p id="director"><strong>Director/es:</strong> {{unaPeli.director}}</p>
+    <p id="anio"><strong>Año de estreno:</strong> {{unaPeli.anio}}</p>
+    <p id="fecha_estreno"><strong>Fecha de estreno:</strong> {{unaPeli.fecha_estreno}}</p>
+    <p id="sinopsis"><strong>Sinopsis:</strong> {{unaPeli.sinopsis}}</p>
+  </div>
+  <div class="comentarios">
+    <h3>Comentarios</h3>
+    <div class="sec_comentarios">
+      {% for comentario in unaPeli.comentarios%}
+        <p id="comentario_usuario"><strong>{{comentario['usuario']}}: </strong>{{comentario.comentario}}</p>
+        <br>
+      {% endfor %}
+    </div>
+    
+    <div class="cont_opciones">
+      <div class="caja"></div>
+      {% if user == "" %}
+      <span></span>
+      {% else %}
+      <div class="comentar">
+        <form method="POST">
+          <label for="hacer_comentario">Tu opinión sobre la pelicula: </label>
+          <textarea name="comentario" id="" cols="80" rows="5" required placeholder="Ingrese su opinión:"></textarea>
+          <input type="submit" value="Enviar comentario" id="boton_enviar_comentario">
+        </form>
+      </div>
+      <div>
+        <form action="/pelicula/editar/{{ unaPeli.nombre }}">
+          <input type="submit" value="Editar {{unaPeli.nombre}}" id="boton_editar">
+        </form>
+      </div>
+      {% if comentarios == 1 %}
+        <span></span>
+      {% else %}
+        <div>
+          <form action="/pelicula/eliminar/{{ unaPeli.nombre }}">
+            <input type="submit" value="Eliminar {{unaPeli.nombre}}" id="boton_eliminar">
+          </form>
+        </div>
+      {% endif%}
+      {% endif%}
+    </div>
+  </div>
 </div>
-{% if comentarios == 1 %}
-<span></span>
-{% else %}
-<div>
-  <form action="/pelicula/eliminar/{{ unaPeli.nombre }}">
-    <input type="submit" value="Eliminar {{unaPeli.nombre}}">
-  </form>
-</div>
-{% endif%}
-{% endif%}
+
 {% endblock %}

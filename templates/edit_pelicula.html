@@ -1,7 +1,9 @@
 {% extends './peliculas.html' %}
 
 {% block content %}
-<h1>{{pelicula_encontrada["nombre"]}}</h1>
-<button value="{{pelicula_encontrada['nombre']}}" class="editarPeli">Editar</button>
+<div class="cont_editar">
+    <h1 id="edit_peli_head">{{pelicula_encontrada["nombre"]}}</h1>
+    <button value="{{pelicula_encontrada['nombre']}}" class="editarPeli">Editar</button>
+</div>
 <div id="edicion"></div>
 {% endblock %}
