@@ -91,6 +91,28 @@ h1{
     padding: 4%;
     backdrop-filter: blur(7px);
 }
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: arial;
+    color: white;
+}
+.form-container > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-container label {
+    width: 170px;
+    text-align: right;
+    margin-right: 15px;
+}
+.form-container input, 
+.form-container select {
+    flex: 1;
+}
 .dirconteiner{
     color: white;
     font-family: Arial;
