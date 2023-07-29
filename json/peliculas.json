@@ -73,7 +73,12 @@
         "Director": "Jung Su-yee",
         "Genero": "Documental",
         "img": "https://pics.filmaffinity.com/Blackpink_la_pelaicula-249752835-large.jpg",
-        "Comentarios": [],
+        "Comentarios": [
+            {
+                "usuario": "leomessi10",
+                "comentario": "Aguante Blackpink"
+            }
+        ],
         "Sinopsis": "Entrevistas exclusivas y material in\u00e9dito de los cinco a\u00f1os de trayectoria de Blackpink, el grupo de pop coreano compuesto por Jennie, Lisa, Ros\u00e9 y Ji-Soo."
     },
     {
@@ -175,6 +180,10 @@
             {
                 "idComent": "001837c7c9cc666729c97cc9b4feb54251bf913ef8f68c96a60720e641bd4d16",
                 "opinion": "Una de mis peliculas favoritas de este director, la actuacion de Di Caprio es digna de un \u00f3scar, una lastima que no se lo dieron."
+            },
+            {
+                "usuario": "leomessi10",
+                "comentario": "Que buena pelicula, la vi el otro dia con Mate y Anto."
             }
         ],
         "sinopsis": "Jordan Belfort, corredor de bolsa de Nueva York, quien fund\u00f3 la compa\u00f1\u00eda Stratton Oakmont cuando a\u00fan era un veintea\u00f1ero, desarrolla h\u00e1bitos de exceso y corrupci\u00f3n."

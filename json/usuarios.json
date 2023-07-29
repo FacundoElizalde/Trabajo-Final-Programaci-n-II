@@ -26,7 +26,10 @@
         "Apellido": "Messi",
         "Usuario": "leomessi10",
         "Id": "3",
-        "Peliculas_Comentadas": [],
+        "Peliculas_Comentadas": [
+            "aa2b62ad23debda3fd7493039f64f199ec31c213775f4c2de4b2c45f006992ed",
+            "x3rtsxfdQcJEZZdWz6LHdUqyMpvkUfy5sBjRqCJdUxAC7hTUTB46LfKE3gsujXty"
+        ],
         "Contrasenia": "qatar2022elijocreer"
     },
     {
@@ -58,11 +61,6 @@
         "Id": "6",
         "Peliculas_Comentadas": [],
         "Contrasenia": "abc123",
-        "peliculas_comentadas": [
-            {
-                "idPeli": "e39114e33fc975227c5352fa24e627be323c9a4c1d9cabe65a2e3d5ecb713756",
-                "idComentario": "84a585a5060952c54a19d2ce90ebc62acaafe3300ac5031a07866a1534798069"
-            }
-        ]
+        "peliculas_comentadas": []
     }
 ]

@@ -13,12 +13,10 @@ def retornar():
 
 @app.route("/peliculas",methods=["GET"])
 def index():
-  return Response (render_template("peliculas.html", user=funciones.funciones.verify(), 
-  nombre_peliculas=funciones.funciones.nombresPeliculas(), 
-  imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
+  return Response (render_template("peliculas.html", user=funciones.funciones.verify(), nombre_peliculas=funciones.funciones.nombresPeliculas(), imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
 
 @app.route("/buscar/<int:info>",methods=["GET"])
-@app.route("/buscar/<info>",methods=["GET"])
+@app.route("/buscar<info>",methods=["GET"])
 def buscar(info):
     lista_encontradas=[]
     peliculas = funciones.funciones.moviesFiles()
@@ -77,22 +75,23 @@ def logout():
   session.pop('username', None)
   return redirect(url_for('index'))
 
-@app.route('/pelicula/<nombrePelicula>')
+@app.route('/pelicula/<nombrePelicula>', methods=['GET', 'POST'])
 def pelicula(nombrePelicula):
   if request.method == "POST":
     coment = {
-      "Usuario":session["username"],
-      "Comentario":request.form["comentario"]
+      "usuario":session["username"],
+      "comentario":request.form["comentario"]
     }
     funciones.funciones.hacerComentario(coment, nombrePelicula)
     return redirect(url_for('index'))
-  
-  movies = funciones.funciones.moviesFiles()
-  for peli in movies:
+  pelis = funciones.funciones.moviesFiles()
+  for peli in pelis:
     if peli["Nombre"] == nombrePelicula:
-      unaPeli = peli
-      return render_template('comentarios.html', unaPeli=unaPeli, 
-    user=funciones.funciones.verify(), comentarios=funciones.funciones.siHayComentarios(nombrePelicula))
+      return render_template('comentarios.html', 
+      unaPeli=peli,
+      user=funciones.funciones.verify(),
+      comentarios=funciones.funciones.siHayComentarios(nombrePelicula),
+      )
   
 @app.route('/pelicula/agregar', methods=['GET', 'POST'])
 def agregarPelicula():

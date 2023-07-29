@@ -7,7 +7,6 @@ Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Fo
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold", "Martin Scorsese", "Quentin Tarantino",
              "Woody Allen"]
 
-
 def moviesFiles():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
     peliculas = json.load(archivo_json1)
@@ -84,13 +83,13 @@ def siHayComentarios(nombrePeli):
 def hacerComentario(comentario, pelicula):
   movies = moviesFiles()
   users = usersFiles()
-  id = retPeli(pelicula)["id"]
+  id = retPeli(pelicula)["Id"]
   for movie in movies:
     if movie["Nombre"] == pelicula:
       movie["Comentarios"].append(comentario)
   for user in users:
-    if user["Usuario"] == comentario["Usuario"]:
-      user["peliculas_comentadas"].append(id)
+    if user["Usuario"] == comentario["usuario"]:
+      user["Peliculas_Comentadas"].append(id)
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)
     f.close()

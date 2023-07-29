@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded',e => {
   }
 })
 
-
 async function init(inicio){
   await inicio.addEventListener("click", e => {
     e.preventDefault();
@@ -36,7 +35,7 @@ async function init(inicio){
       const form = {
         formulario:`
         <div>
-          <label for="nombre">Nombre de la pelicula:</label>
+          <label for="Nombre">Nombre de la pelicula:</label>
           <input type="text" name="nombre">
         </div>
         <div>
