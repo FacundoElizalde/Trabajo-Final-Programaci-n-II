@@ -134,7 +134,7 @@ def editarPeli(peli):
   if 'username' not in session:
     return redirect(url_for('index'))
   else:
-    pelicula_mod_id=funciones.funciones.retPeli(peli)["id"]
+    pelicula_mod_id=funciones.funciones.retPeli(peli)["Id"]
     if request.method=="POST":
       peliculaEdicion = {
         "Id":pelicula_mod_id,
