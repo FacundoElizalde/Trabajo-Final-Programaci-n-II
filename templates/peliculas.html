@@ -42,7 +42,6 @@
                       <a href="{{url_for('agregarPelicula')}}" id="agregar_pelicula">Agregar Pelicula</a>
                       {% endif %}
                     </div>
-                    </div>
                 </nav>
             </header>
 
@@ -54,7 +53,6 @@
                                 {% for i in range(nombre_peliculas|length) %}
                                     <div id="{{i}}">
                                         <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px"> 
-                                        <a name="{{ nombre_peliculas[i] }}" href="/pelicula">{{ nombre_peliculas[i] }}</a>
                                         <p>{{ nombre_peliculas[i] }}</p>
                                     </div>
                                 {% endfor %}
@@ -66,8 +64,6 @@
                     </article>
                 {% endblock %}
             </main>
-            <footer>
-            </footer>
         </div>
         <link rel="stylesheet" href="{{url_for('static',filename='css/e_index.css')}}">
     </body>

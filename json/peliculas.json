@@ -193,7 +193,7 @@
         "Nombre": "The Transporter",
         "Anio": "2002",
         "Fecha_Estreno": "2 de Octubre",
-        "Director"  : "Louis Leterrier",
+        "Director": "Louis Leterrier",
         "Genero": "Accion",
         "img": "https://m.media-amazon.com/images/M/MV5BMTk2NDc2MDAxN15BMl5BanBnXkFtZTYwNDc1NDY2._V1_FMjpg_UX1000_.jpg",
         "Comentarios": [
@@ -205,19 +205,19 @@
         "Sinopsis": "El exmilitar Frank Martin vive lo que parece ser una vida tranquila, prestando sus servicios como transportador, pero cuando rompe las tres reglas de conducta por las que se rige, la violencia vuelve a adue\u00f1arse de su vida."
     },
     {
-        "Id": "fd766cb61d64b6fe4eca5e106f54fb723d656b8f2226689857ce584e430ca5d8",
-        "Nombre": "fudveofivho",
-        "Anio": "2017",
-        "Fecha_Estreno": "10 de agosto",
-        "Director": "Louis Leterrier",
-        "Genero": "Romance",
-        "img": "https://i.pinimg.com/originals/d6/1c/8d/d61c8ddd0d6decdbd40ee3acc4385fc7.png",
+        "Id": "4d8d8ce64ec42f69ced8b7b26744fda03a0934724d3f71b5047ba294a42d97e0",
+        "Nombre": "Kill Bill",
+        "Anio": "2003",
+        "Fecha_Estreno": "27 de Noviembre",
+        "Director": "Quentin Tarantino",
+        "Genero": "Accion",
+        "img": "https://pics.filmaffinity.com/Kill_Bill_Volumen_1-216872360-large.jpg",
         "Comentarios": [
             {
-                "usuario": "leomessi10",
-                "comentario": "wfrewfwf"
+                "usuario": "Catchingfire2020",
+                "comentario": "Gran pel\u00edcula, una de las mejores de Tarantino"
             }
         ],
-        "Sinopsis": "wwefewf"
+        "Sinopsis": "Una asesina despierta de un coma y, tras descubrir que el hijo que llevaba en el vientre ya no est\u00e1, decide salir a buscar a los criminales que la traicionaron."
     }
 ]

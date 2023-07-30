@@ -7,6 +7,7 @@ Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Fo
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold", "Martin Scorsese", "Quentin Tarantino",
              "Woody Allen"]
 
+
 def moviesFiles():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
     peliculas = json.load(archivo_json1)
@@ -42,7 +43,7 @@ def agregarPeliculas(pelicula, userSession):
   users = usersFiles()
   for user in users:
     if userSession == user['Usuario']:
-      user['Peliculas_Comentadas'].append(pelicula['id'])
+      user['Peliculas_Comentadas'].append(pelicula['Id'])
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)
     f.close()
