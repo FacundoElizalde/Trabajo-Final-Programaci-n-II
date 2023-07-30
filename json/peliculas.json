@@ -137,7 +137,7 @@
         "Sinopsis": "Forrest Gump, un joven sure\u00f1o, tenaz e inocente, es protagonista de acontecimientos cruciales en la historia de los Estados Unidos."
     },
     {
-        "id": "8c16b607acedcf38338c9e80f5f71e495806b7c4634776c367ec4f393d0c6e8c",
+        "Id": "8c16b607acedcf38338c9e80f5f71e495806b7c4634776c367ec4f393d0c6e8c",
         "Nombre": "Back to the Future",
         "Anio": "1989",
         "Fecha_Estreno": "28 de Diciembre",
@@ -150,10 +150,10 @@
                 "opinion": "Gran Pelicula, uno de los grandes clasicos del cine."
             }
         ],
-        "sinopsis": "Un adolescente y un inventor extravagante viajan al pasado y al futuro para alterar una serie de eventos desastrosos."
+        "Sinopsis": "Un adolescente y un inventor extravagante viajan al pasado y al futuro para alterar una serie de eventos desastrosos."
     },
     {
-        "id": "e39114e33fc975227c5352fa24e627be323c9a4c1d9cabe65a2e3d5ecb713756",
+        "Id": "e39114e33fc975227c5352fa24e627be323c9a4c1d9cabe65a2e3d5ecb713756",
         "Nombre": "Ford v Ferrari",
         "Anio": "2019",
         "Fecha_Estreno": "30 de Agosto",
@@ -166,10 +166,10 @@
                 "opinion": "Sin dudas una pelicula excelente que narra una de las mejores rivalidades en la historia del automovilismo."
             }
         ],
-        "sinopsis": "El visionario Carroll Shelby y el conductor brit\u00e1nico Ken Miles reciben la misi\u00f3n de construir un nuevo autom\u00f3vil con el fin de derrocar el dominio de Ferrari en el Campeonato del Mundo de Le Mans de 1966."
+        "Sinopsis": "El visionario Carroll Shelby y el conductor brit\u00e1nico Ken Miles reciben la misi\u00f3n de construir un nuevo autom\u00f3vil con el fin de derrocar el dominio de Ferrari en el Campeonato del Mundo de Le Mans de 1966."
     },
     {
-        "id": "aa2b62ad23debda3fd7493039f64f199ec31c213775f4c2de4b2c45f006992ed",
+        "Id": "aa2b62ad23debda3fd7493039f64f199ec31c213775f4c2de4b2c45f006992ed",
         "Nombre": "The Wolf of Wall Street",
         "Anio": "2013",
         "Fecha_Estreno": "2 de Enero",
@@ -186,14 +186,14 @@
                 "comentario": "Que buena pelicula, la vi el otro dia con Mate y Anto."
             }
         ],
-        "sinopsis": "Jordan Belfort, corredor de bolsa de Nueva York, quien fund\u00f3 la compa\u00f1\u00eda Stratton Oakmont cuando a\u00fan era un veintea\u00f1ero, desarrolla h\u00e1bitos de exceso y corrupci\u00f3n."
+        "Sinopsis": "Jordan Belfort, corredor de bolsa de Nueva York, quien fund\u00f3 la compa\u00f1\u00eda Stratton Oakmont cuando a\u00fan era un veintea\u00f1ero, desarrolla h\u00e1bitos de exceso y corrupci\u00f3n."
     },
     {
-        "id": "d373eeeff831a8769ba268b3b22b3cfc4f1c04ff95874654c8b5626e7c3db06b",
+        "Id": "d373eeeff831a8769ba268b3b22b3cfc4f1c04ff95874654c8b5626e7c3db06b",
         "Nombre": "The Transporter",
         "Anio": "2002",
         "Fecha_Estreno": "2 de Octubre",
-        "Director": "Louis Leterrier",
+        "Director"  : "Louis Leterrier",
         "Genero": "Accion",
         "img": "https://m.media-amazon.com/images/M/MV5BMTk2NDc2MDAxN15BMl5BanBnXkFtZTYwNDc1NDY2._V1_FMjpg_UX1000_.jpg",
         "Comentarios": [
@@ -202,6 +202,22 @@
                 "opinion": "Una de mis peliculas favoritas de Jason Statham."
             }
         ],
-        "sinopsis": "El exmilitar Frank Martin vive lo que parece ser una vida tranquila, prestando sus servicios como transportador, pero cuando rompe las tres reglas de conducta por las que se rige, la violencia vuelve a adue\u00f1arse de su vida."
+        "Sinopsis": "El exmilitar Frank Martin vive lo que parece ser una vida tranquila, prestando sus servicios como transportador, pero cuando rompe las tres reglas de conducta por las que se rige, la violencia vuelve a adue\u00f1arse de su vida."
+    },
+    {
+        "Id": "fd766cb61d64b6fe4eca5e106f54fb723d656b8f2226689857ce584e430ca5d8",
+        "Nombre": "fudveofivho",
+        "Anio": "2017",
+        "Fecha_Estreno": "10 de agosto",
+        "Director": "Louis Leterrier",
+        "Genero": "Romance",
+        "img": "https://i.pinimg.com/originals/d6/1c/8d/d61c8ddd0d6decdbd40ee3acc4385fc7.png",
+        "Comentarios": [
+            {
+                "usuario": "leomessi10",
+                "comentario": "wfrewfwf"
+            }
+        ],
+        "Sinopsis": "wwefewf"
     }
 ]

@@ -39,15 +39,10 @@ def agregarPeliculas(pelicula, userSession):
   with open('./json/peliculas.json', 'w') as f:
     json.dump(movies, f, indent=4)
     f.close()
-  for idCom in pelicula['Comentarios']:
-    idComentario = idCom['idComent']
   users = usersFiles()
   for user in users:
     if userSession == user['Usuario']:
-      user['peliculas_comentadas'] = [{
-        "idPeli":pelicula['id'],
-        "idComentario":idComentario
-      }]
+      user['Peliculas_Comentadas'].append(pelicula['id'])
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)
     f.close()
@@ -70,7 +65,7 @@ def retPeli(peli):
     for i in moviesFiles():
         if i["Nombre"] == peli:
             return i
-        
+
 def siHayComentarios(nombrePeli):
   movies = moviesFiles()
   for movie in movies:
@@ -79,7 +74,7 @@ def siHayComentarios(nombrePeli):
         return 1
       else:
         return 2
-      
+
 def hacerComentario(comentario, pelicula):
   movies = moviesFiles()
   users = usersFiles()
@@ -88,8 +83,8 @@ def hacerComentario(comentario, pelicula):
     if movie["Nombre"] == pelicula:
       movie["Comentarios"].append(comentario)
   for user in users:
-    if user["Usuario"] == comentario["usuario"]:
-      user["Peliculas_Comentadas"].append(id)
+    if user["usuario"] == comentario["usuario"]:
+      user["peliculas_comentadas"].append(id)
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)
     f.close()
@@ -97,10 +92,10 @@ def hacerComentario(comentario, pelicula):
     json.dump(movies, f, indent=4)
     f.close()
 
-def eliminarPeli(peli):
+def del_pelicula(peli):
   movies = moviesFiles()
   for movie in movies:
-    if movie['Nombre'] == peli:
+    if movie['nombre'] == peli:
       movies.remove(movie)
   with open('./json/peliculas.json', 'w') as f:
     json.dump(movies, f, indent=4)
@@ -113,9 +108,9 @@ def update(peli):
       movie["Nombre"] = peli["Nombre"]
       movie["Anio"] = peli["Anio"]
       movie["Fecha_Estreno"] = peli["Fecha_Estreno"]
+      movie["img"] = peli["img"]
       movie["Director"] = peli["Director"]
       movie["Genero"] = peli["Genero"]
-      movie["img"] = peli["img"]
       movie["Sinopsis"] = peli["Sinopsis"]
   with open('./json/peliculas.json', "w") as file:
    json.dump(dataMovies, file, indent=4)
