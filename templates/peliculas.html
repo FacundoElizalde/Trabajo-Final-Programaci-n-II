@@ -52,7 +52,9 @@
                             {% if nombre_peliculas|length > 0 %}
                                 {% for i in range(nombre_peliculas|length) %}
                                     <div id="{{i}}">
-                                        <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px"> 
+                                        <a href="/pelicula/{{ nombre_peliculas[i] }}">
+                                        <img src="{{ imagenes_peliculas[i] }}" alt="imagen" width="200px" height="300px">
+                                    </a>
                                         <p>{{ nombre_peliculas[i] }}</p>
                                     </div>
                                 {% endfor %}

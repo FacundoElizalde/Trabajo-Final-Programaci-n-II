@@ -83,7 +83,14 @@ a{
     margin-left: 45px;
     margin-right: 45px;
 }
-
+.articulos_all div {
+    position:relative;
+    display:flex;
+    display:inline-block;
+    margin:15px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
 .articulos div p {
     position: absolute;
     bottom:1.25%;
@@ -91,6 +98,16 @@ a{
     height: 15%;;
     background: darkblue;
     opacity: .6;
+    align-items: center;
+    font-family: Arial Black;
+    color: white;
+    text-align: center;
+}
+.articulos_all div p {
+    position: absolute;
+    bottom:1.25%;
+    width: 100%;
+    height: 15%;;
     align-items: center;
     font-family: Arial Black;
     color: white;
@@ -142,4 +159,7 @@ h1{
     color: white;
     font-family: Arial;
     margin: 2%;
+}
+.info{
+    color: white;
 }

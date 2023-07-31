@@ -8,26 +8,26 @@
 
 <div class="info_pelicula">
   <div class="img">
-    <img src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}" width="350px" height="700px">
+    <img src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}" width="300px" height="500px">
   </div>
   <div class="info">
-    <h1>{{unaPeli.nombre}}</h1>
+    <h1>{{unaPeli.Nombre}}</h1>
   <div class="pelicula">
     <div class="imagen">
     </div>
     <div class="info">
-      <p>{{unaPeli.director}}</p>
-      <p>{{unaPeli.anio}}</p>
-      <p>{{unaPeli.fecha_estreno}}</p>
-      <p>{{unaPeli.sinopsis}}</p>
+      <p>{{unaPeli.Director}}</p>
+      <p>{{unaPeli.Anio}}</p>
+      <p>{{unaPeli.Fecha_Estreno}}</p>
+      <p>{{unaPeli.Sinopsis}}</p>
     </div>
 </div>
   </div>
   <div class="comentarios">
     <h3>Comentarios</h3>
     <div class="sec_comentarios">
-      {% for comentario in unaPeli.comentarios%}
-        <p id="comentario_usuario"><strong>{{comentario['usuario']}}: </strong>{{comentario.comentario}}</p>
+      {% for comentario in unaPeli.Comentarios%}
+        <p id="comentario_usuario"><strong>{{comentario['Usuario']}}: </strong>{{comentario.Comentario}}</p>
         <br>
       {% endfor %}
     </div>
