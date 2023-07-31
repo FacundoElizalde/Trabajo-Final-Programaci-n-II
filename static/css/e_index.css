@@ -66,13 +66,15 @@ a{
     margin: 2%;
     width: 60%;
     font-family: Arial;
-    color: white;
+    color: red;
 
 }
 .agregar_deco, .dgi_deco, .todas_deco, .logout_deco, .usuario_deco{
     margin-right: 1%;
     margin-left: 1%;
     background-color: black;
+    color: white;
+    font-family: Arial;
     padding: 1%;
     text-align: center;
     border-radius: 15px;
