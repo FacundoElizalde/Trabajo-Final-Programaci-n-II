@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(10px);
+    background-attachment: fixed;
 }
 header {
     height: 70px;
@@ -23,17 +24,14 @@ header nav {
     height: 40px;
     margin:15px;
 }
-
 .buscador {
     position:absolute;
     right:5%;
 }
-
 .input_buscador {
     height: 30px;
     width: 215px;
 }
-
 #btn-perfil {
     position: absolute;
     top:0.5%;
@@ -46,7 +44,6 @@ header nav {
     color: darkblue;
     background-color: white;
 }
-
 button:hover {
     cursor:pointer;
 } 
@@ -67,7 +64,6 @@ a{
     width: 60%;
     font-family: Arial;
     color: red;
-
 }
 .agregar_deco, .dgi_deco, .todas_deco, .logout_deco, .usuario_deco{
     margin-right: 1%;
@@ -115,9 +111,14 @@ h1{
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin: 0 auto;
     font-family: arial;
-    color: white;
+    color: blue;
+    border: 3px solid blue;
+    margin: auto;
+    padding: 2%;
+    border-radius: 25px;
+    margin-top: 12.3%;
+    margin-bottom: 12.3%;
 }
 .form{
     color: white;
@@ -137,7 +138,8 @@ h1{
 .form-container select {
     flex: 1;
 }
-.dirconteiner{
+.dir_conteiner{
     color: white;
     font-family: Arial;
+    margin: 2%;
 }
