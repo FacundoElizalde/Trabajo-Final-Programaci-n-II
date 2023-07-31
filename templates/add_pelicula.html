@@ -12,7 +12,7 @@
       <input type="text" name="imagen" placeholder="Link img." required>
     </div>
     <div>
-      <label for="anio">Anio:</label>
+      <label for="anio">Año:</label>
       <input type="text" name="anio">
     </div>
     <div>
@@ -20,24 +20,24 @@
       <input type="text" name="estreno" placeholder="(Dia) de (Mes)" required>
     </div>
     <div>
-      <label for="opinion">Tu opinion</label>
+      <label for="opinion">Tu Opinion:</label>
       <input type="text" name="opinion" required>
     </div>
     <div>
-      <label for="sinopsis">Sinopsis</label>
+      <label for="sinopsis">Sinopsis:</label>
       <input type="text" name="sinopsis" required>
     </div>
     <div>
-      <label for="nombre">Directores disponibles</label>
+      <label for="nombre">Directores Disponibles:</label>
       <select name="director" required>
-        <option disabled selected>Director</option>
+        <option disabled selected>Director:</option>
         {% for director in directores %}
           <option value="{{director}}">{{director}}</option>
           {% endfor %}
       </select>
     </div>
     <div>
-      <label for="nombre">Generos disponibles</label>
+      <label for="nombre">Generos Disponibles:</label>
       <select name="genero" required>
         <option disabled selected>Genero</option>
     {% for genero in generos %}

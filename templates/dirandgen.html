@@ -10,7 +10,7 @@
 <div class="caja_imagenes">
     <div></div>
 </div>
-<div class="dirconteiner">
+<div class="dir_conteiner">
     {% if directores|length > 0 %}
     <div class="directores">
         <h3>Los directores presentes en la plataforma son: </h3>
@@ -22,7 +22,7 @@
     {% endif %}
     <br>
     {% if generos|length > 0 %}
-    <div class="generos">
+    <div class="generos_conteiner">
         <h3>Los generos presentes en la plataforma son: </h3>
         <br>
         {% for i in generos %}
@@ -32,7 +32,7 @@
     {% endif %}
     <br>
     {% if imagenes|length > 0 %}
-    <div class="imagenes">
+    <div class="imagenes_conteiner">
         <h3>Las películas con imágenes cargadas son: </h3>
         <br>
         {% for i in imagenes %}
