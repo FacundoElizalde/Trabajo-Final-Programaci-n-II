@@ -53,12 +53,30 @@ button:hover {
 #btn-perfil:active {
     background-color: #6c6cffc5;
 }
-
 .boton_inicio {
     width: 100px;
     height: 80px;
 }
+a{
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+}
+.opciones_menu{
+    margin: 2%;
+    width: 60%;
+    font-family: Arial;
+    color: white;
 
+}
+.agregar_deco, .dgi_deco, .todas_deco, .logout_deco, .usuario_deco{
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: black;
+    padding: 1%;
+    text-align: center;
+    border-radius: 15px;
+}
 .articulos div {
     position:relative;
     display:flex;

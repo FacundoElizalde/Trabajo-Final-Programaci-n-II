@@ -27,9 +27,7 @@
                         </form>
                     </div>
 
-                    <div>
-                        <a href="{{url_for('dGI')}}">Directores, generos e imagenes</a>
-                        <a href="{{url_for('allPelis')}}">Todas las Peliculas</a>
+                    <div class="opciones_menu">                        
                         {% if user == "" %}
                       <a href="{{url_for('login')}}">
                         <button id="btn-perfil"> 
@@ -38,9 +36,11 @@
                       </a>
                       {% else %}
                       {{user}}
-                      <a href="{{url_for('logout')}}" id="cerrar_sesion">Cerrar sesion</a>
-                      <a href="{{url_for('agregarPelicula')}}" id="agregar_pelicula">Agregar Pelicula</a>
+                        <a class="agregar_deco" href="{{url_for('agregarPelicula')}}" id="agregar_pelicula">Agregar Pelicula</a>
+                        <a class="logout_deco" href="{{url_for('logout')}}" id="cerrar_sesion">Cerrar sesion</a>
                       {% endif %}
+                      <a class="dgi_deco" href="{{url_for('dGI')}}">Directores, generos e imagenes</a>
+                      <a class="todas_deco" href="{{url_for('allPelis')}}">Todas las Peliculas</a>
                     </div>
                 </nav>
             </header>
