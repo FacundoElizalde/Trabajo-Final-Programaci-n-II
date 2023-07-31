@@ -8,18 +8,18 @@
 
 <div class="info_pelicula">
   <div class="img">
-    <img src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}" width="300px" height="500px">
+    <img class="imagen_deco" src="{{unaPeli.img}}" alt="{{unaPeli.nombre}}" width="300px" height="500px">
   </div>
-  <div class="info">
-    <h1>{{unaPeli.Nombre}}</h1>
+  <div class="info_title">
+    <h1 class="h1_peli">{{unaPeli.Nombre}}</h1>
   <div class="pelicula">
     <div class="imagen">
     </div>
     <div class="info">
-      <p>{{unaPeli.Director}}</p>
-      <p>{{unaPeli.Anio}}</p>
-      <p>{{unaPeli.Fecha_Estreno}}</p>
-      <p>{{unaPeli.Sinopsis}}</p>
+      <p id="director_peli">Director: {{unaPeli.Director}}</p>
+      <p id="año_peli">Año de Lanzamiento: {{unaPeli.Anio}}</p>
+      <p id="fecha_peli">Fecha de Estreno: {{unaPeli.Fecha_Estreno}}</p>
+      <p id="sinopsis_peli">Sinopsis: {{unaPeli.Sinopsis}}</p>
     </div>
 </div>
   </div>
