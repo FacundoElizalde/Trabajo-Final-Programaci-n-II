@@ -8,19 +8,19 @@ Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Fo
              "Woody Allen", "Juan Jose Campanella", "Carlos Saldanha"]
 
 
-def moviesFiles():
+def movies_files():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
     peliculas = json.load(archivo_json1)
   return peliculas
 
-def usersFiles():
+def user_files():
   with open('./json/usuarios.json', encoding='utf-8') as archivo_json1:
     users = json.load(archivo_json1)
   return users
 
 def nombresPeliculas():
   nombres = []
-  peliculas = moviesFiles()
+  peliculas = movies_files()
   for i in peliculas[::-1]:
     if (len(nombres)<10) and (i["Nombre"] not in nombres):
         nombres.append(i["Nombre"])
@@ -28,19 +28,19 @@ def nombresPeliculas():
 
 def imgPeliculas(): 
   img = []
-  peliculas = moviesFiles()
+  peliculas = movies_files()
   for i in peliculas[::-1]:
     if (len(img)<10) and (i["img"] not in img):
       img.append(i["img"])
   return img
 
 def agregarPeliculas(pelicula, userSession):
-  movies = moviesFiles()
+  movies = movies_files()
   movies.append(pelicula)
   with open('./json/peliculas.json', 'w') as f:
     json.dump(movies, f, indent=4)
     f.close()
-  users = usersFiles()
+  users = user_files()
   for user in users:
     if userSession == user['Usuario']:
       user['Peliculas_Comentadas'].append(pelicula['Id'])
@@ -57,18 +57,18 @@ def verify():
 
 def pelisConImg():
   imagenes=[]
-  for i in moviesFiles():
+  for i in movies_files():
     if i["img"]!="":
       imagenes.append(i["Nombre"])
   return imagenes
 
-def retPeli(peli):
-    for i in moviesFiles():
+def ret_peli(peli):
+    for i in movies_files():
         if i["Nombre"] == peli:
             return i
 
 def siHayComentarios(nombrePeli):
-  movies = moviesFiles()
+  movies = movies_files()
   for movie in movies:
     if movie['Nombre'] == nombrePeli:
       if len(movie['Comentarios']) > 0:
@@ -76,10 +76,10 @@ def siHayComentarios(nombrePeli):
       else:
         return 2
 
-def hacerComentario(comentario, pelicula):
-  movies = moviesFiles()
-  users = usersFiles()
-  id = retPeli(pelicula)["Id"]
+def comentar(comentario, pelicula):
+  movies = movies_files()
+  users = user_files()
+  id = ret_peli(pelicula)["Id"]
   for movie in movies:
     if movie["Nombre"] == pelicula:
       movie["Comentarios"].append(comentario)
@@ -94,7 +94,7 @@ def hacerComentario(comentario, pelicula):
     f.close()
 
 def del_pelicula(peli):
-  movies = moviesFiles()
+  movies = movies_files()
   for movie in movies:
     if movie['nombre'] == peli:
       movies.remove(movie)
@@ -103,7 +103,7 @@ def del_pelicula(peli):
     f.close()
 
 def update(peli):
-  dataMovies = moviesFiles()
+  dataMovies = movies_files()
   for movie in dataMovies:
     if peli["Id"] == movie["Id"]:
       movie["Nombre"] = peli["Nombre"]

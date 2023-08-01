@@ -9,6 +9,9 @@ body{
     backdrop-filter: blur(10px);
     background-attachment: fixed;
 }
+
+/************ HEADER ****************/
+
 header {
     height: 70px;
     width: 100%;
@@ -84,6 +87,9 @@ a{
     margin-left: 45px;
     margin-right: 45px;
 }
+
+/***************** PELICULAS ********************/
+
 .articulos_all div {
     position:relative;
     display:flex;
@@ -125,6 +131,9 @@ h1{
     padding: 4%;
     backdrop-filter: blur(7px);
 }
+
+/************* ADD PELICULA ************/
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -142,6 +151,23 @@ h1{
 .fondo_deco{
     padding: 0.01%;
 }
+.form-container > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-container label {
+    width: 170px;
+    text-align: right;
+    margin-right: 15px;
+}
+.form-container input, 
+.form-container select {
+    flex: 1;
+}
+
+/*************** PERFIL ****************/
+
 .login_deco{
     padding: 18.2%;
 }
@@ -175,20 +201,9 @@ h1{
 .usuario_place{
     margin-left: 6px;
 }
-.form-container > div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.form-container label {
-    width: 170px;
-    text-align: right;
-    margin-right: 15px;
-}
-.form-container input, 
-.form-container select {
-    flex: 1;
-}
+
+/*********** COMENTARIOS ************/
+
 .dir_conteiner{
     color: white;
     font-family: Arial;
@@ -249,4 +264,26 @@ h1{
 }
 .hacer_comentario_deco{
     margin-top: 1%;
+}
+
+/************* DIR AND GEN ***************/
+
+.dir_conteiner{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.directores_conteiner, .generos_conteiner, .imagenes_conteiner{
+    columns: 3;
+    padding: 2%;
+    border: 3px solid whitesmoke;
+    background-color: #080f28;
+    border-radius: 20px;
+    text-align: justify;
+    font-family: 'Segoe UI';
+    margin-bottom: 2%;
+}
+.tituladodirandgen{
+    margin-bottom: 2%;
+    font-family: 'Segoe UI';
 }

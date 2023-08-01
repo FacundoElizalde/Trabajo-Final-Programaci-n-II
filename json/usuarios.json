@@ -63,7 +63,9 @@
         "Apellido": "Perez",
         "Usuario": "Administrador",
         "Id": "6",
-        "Peliculas_Comentadas": [],
+        "Peliculas_Comentadas": [
+            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174"
+        ],
         "Contrasenia": "abc123",
         "peliculas_comentadas": [
             "4d8d8ce64ec42f69ced8b7b26744fda03a0934724d3f71b5047ba294a42d97e0"

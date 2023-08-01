@@ -3,9 +3,8 @@
 {% block content %}
 <div class="dir_conteiner">
     {% if directores|length > 0 %}
+    <h3 class="tituladodirandgen">Los Directores presentes en la plataforma son: </h3>
     <div class="directores_conteiner">
-        <h3>Los Directores presentes en la plataforma son: </h3>
-        <br>
         {% for i in directores %}
             <li>{{i}}</li>
         {% endfor %}
@@ -13,19 +12,17 @@
     {% endif %}
     <br>
     {% if generos|length > 0 %}
+    <h3 class="tituladodirandgen">Los Generos presentes en la plataforma son: </h3>
     <div class="generos_conteiner">
-        <h3>Los Generos presentes en la plataforma son: </h3>
-        <br>
         {% for i in generos %}
             <li>{{i}}</li>
         {% endfor %}
     </div>
     {% endif %}
     <br>
+    <h3 class="tituladodirandgen">Las películas con imágenes cargadas son: </h3>
     {% if imagenes|length > 0 %}
     <div class="imagenes_conteiner">
-        <h3>Las películas con imágenes cargadas son: </h3>
-        <br>
         {% for i in imagenes %}
             <li>{{i}}</li>
         {% endfor %}

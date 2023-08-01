@@ -255,5 +255,21 @@
             }
         ],
         "Sinopsis": "Capturado por contrabandistas cuando era apenas una cr\u00eda, un guacamayo llamado Blu nunca aprendi\u00f3 a volar y vive una vida feliz domesticado en Minnesota con su amiga humana, Linda. Blu se piensa que es el \u00faltimo de su especie, pero cuando escuchan que Jewel, una solitaria hembra, vive en R\u00edo de Janeiro, Blu y Linda emprender\u00e1n un viaje a su encuentro."
+    },
+    {
+        "Id": "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174",
+        "Nombre": "R\u00edo 2",
+        "Anio": "2014",
+        "Fecha_Estreno": "10 de Abril",
+        "Director": "Carlos Saldanha",
+        "Genero": "Animacion",
+        "img": "https://www.santiagoturismo.com/files/rio2.jpg",
+        "Comentarios": [
+            {
+                "usuario": "Administrador",
+                "comentario": "La secuela de una gran pel\u00edcula para ver con toda la familia."
+            }
+        ],
+        "Sinopsis": "Blu, Jewel y sus tres ni\u00f1os dejan la comodidad de la ciudad y viajan a la selva del Amazonas para aprender a vivir como aves salvajes."
     }
 ]
