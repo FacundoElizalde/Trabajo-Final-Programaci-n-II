@@ -85,7 +85,7 @@ def comentar(comentario, pelicula):
       movie["Comentarios"].append(comentario)
   for user in users:
     if user["Usuario"] == comentario["usuario"]:
-      user["peliculas_comentadas"].append(id)
+      user["Peliculas_Comentadas"].append(id)
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)
     f.close()

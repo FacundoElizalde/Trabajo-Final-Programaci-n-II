@@ -11,7 +11,7 @@ app.secret_key = 's94LQfKH83jxfr7o0ZQDfdttRznMeX4rZR0Q3sU8otma8WNYCuTWBViUosLhep
 def retornar():
   return redirect(url_for("index"),Response=HTTPStatus.OK)
 
-@app.route("/peliculas",methods=["GET"])
+@app.route("/home",methods=["GET"])
 def index():
   return Response (render_template("peliculas.html", user=funciones.funciones.verify(), 
   nombre_peliculas=funciones.funciones.nombresPeliculas(), 
@@ -43,9 +43,9 @@ def buscar_post():
     informacion=request.form["info_buscar"]
     return redirect(url_for("buscar", info=informacion, next="edit"), Response=HTTPStatus.OK) 
 
-@app.route("/dgi")
+@app.route("/infoadicional")
 def dGI():
-  return Response (render_template("dirandgen.html", 
+  return Response (render_template("info_adicional.html", 
   user=funciones.funciones.verify(),directores = funciones.funciones.Directores,
   generos=funciones.funciones.Generos, imagenes = funciones.funciones.pelisConImg()),status=HTTPStatus.OK)
 
@@ -148,7 +148,7 @@ def editarPeli(peli):
       }
       funciones.funciones.update(peliculaEdicion)
       return redirect(url_for('index'))
-    return render_template("edit_pelicula.html", pelicula_encontrada=funciones.funciones.ret_peli(peli))
+    return render_template("edit_pelicula.html", pelicula_encontrada = funciones.funciones.ret_peli(peli))
 
 @app.route('/allmovies')
 def allPelis():
