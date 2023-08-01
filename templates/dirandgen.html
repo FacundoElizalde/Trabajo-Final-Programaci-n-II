@@ -1,18 +1,9 @@
 {% extends './peliculas.html' %}
 
 {% block content %}
-<div class="caja_directores">
-    <div></div>
-</div>
-<div class="caja_generos">
-    <div></div>
-</div>
-<div class="caja_imagenes">
-    <div></div>
-</div>
 <div class="dir_conteiner">
     {% if directores|length > 0 %}
-    <div class="directores">
+    <div class="directores_conteiner">
         <h3>Los Directores presentes en la plataforma son: </h3>
         <br>
         {% for i in directores %}

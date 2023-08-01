@@ -142,14 +142,30 @@ h1{
 .fondo_deco{
     padding: 0.01%;
 }
+.login_deco{
+    padding: 15%;
+}
 .form{
     color: white;
     font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #080f28;
+    padding: 2%;
+}
+.username_deco, .contraseña_deco{
+    padding: 1%;
+    width: 400px;
+    font-size: 18px;
 }
 .form-container > div {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
 }
 .form-container label {
     width: 170px;

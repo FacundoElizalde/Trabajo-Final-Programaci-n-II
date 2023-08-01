@@ -9,11 +9,10 @@
                     <a href="/pelicula/{{ movie['nombre'] }}">
                       <img src="{{ movie['img'] }}" alt="imagen" width="200px" height="300px"> 
                     </a>
-                      <p>{{ movie['nombre'] }}</p>
                   </div>
               {% endfor %}
           {% else %}
-              <h1>No se encontró ninguna película.</h1>
+              <h1>No hay peliculas.</h1>
           {% endif %}
     </div>
 </article>
