@@ -5,7 +5,7 @@ Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror",
            "Epico", "Belico", "Deportes"]
 Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee",
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold", "Martin Scorsese", "Quentin Tarantino",
-             "Woody Allen"]
+             "Woody Allen", "Juan Jose Campanella"]
 
 
 def moviesFiles():
@@ -84,7 +84,7 @@ def hacerComentario(comentario, pelicula):
     if movie["Nombre"] == pelicula:
       movie["Comentarios"].append(comentario)
   for user in users:
-    if user["usuario"] == comentario["usuario"]:
+    if user["Usuario"] == comentario["usuario"]:
       user["peliculas_comentadas"].append(id)
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)

@@ -62,6 +62,8 @@
         "Id": "6",
         "Peliculas_Comentadas": [],
         "Contrasenia": "abc123",
-        "peliculas_comentadas": []
+        "peliculas_comentadas": [
+            "4d8d8ce64ec42f69ced8b7b26744fda03a0934724d3f71b5047ba294a42d97e0"
+        ]
     }
 ]
