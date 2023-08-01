@@ -2,6 +2,7 @@
 
 {% block content %}
 <form method="POST">
+<div class="fondo_deco">
   <div class="form-container">
     <div>
       <label for="nombre">Nombre de la pelicula:</label>
@@ -20,7 +21,7 @@
       <input type="text" name="estreno" placeholder="(Dia) de (Mes)" required>
     </div>
     <div>
-      <label for="opinion">Tu Opinion:</label>
+      <label for="opinion">Reseña:</label>
       <input type="text" name="opinion" required>
     </div>
     <div>
@@ -46,5 +47,6 @@
   </select>
   </div>
   <input type="submit">
+</div> 
 </form>
 {% endblock %}

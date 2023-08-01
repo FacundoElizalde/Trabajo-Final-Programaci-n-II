@@ -5,7 +5,7 @@ Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror",
            "Epico", "Belico", "Deportes", "Animacion"]
 Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee",
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold", "Martin Scorsese", "Quentin Tarantino",
-             "Woody Allen", "Juan Jose Campanella"]
+             "Woody Allen", "Juan Jose Campanella", "Carlos Saldanha"]
 
 
 def moviesFiles():
