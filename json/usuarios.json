@@ -4,7 +4,9 @@
         "Apellido": "Durso",
         "Usuario": "TomyDurso22",
         "Id": "1",
-        "Peliculas_Comentadas": [],
+        "Peliculas_Comentadas": [
+            "a9ff38189155b666ce68099aaf8ff233113f7abaae71bf776273d36b2e4b5acd"
+        ],
         "Contrasenia": "VamoGimnasia22",
         "peliculas_comentadas": [
             {

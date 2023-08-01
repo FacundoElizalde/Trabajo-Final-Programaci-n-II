@@ -223,5 +223,21 @@
             }
         ],
         "Sinopsis": "Una asesina despierta de un coma y, tras descubrir que el hijo que llevaba en el vientre ya no est\u00e1, decide salir a buscar a los criminales que la traicionaron."
+    },
+    {
+        "Id": "a9ff38189155b666ce68099aaf8ff233113f7abaae71bf776273d36b2e4b5acd",
+        "Nombre": "Metegol",
+        "Anio": "2013",
+        "Fecha_Estreno": "18 de Julio",
+        "Director": "Juan Jose Campanella",
+        "Genero": "Animacion",
+        "img": "https://m.media-amazon.com/images/I/91oBrUgZFhL._AC_UF894,1000_QL80_.jpg",
+        "Comentarios": [
+            {
+                "usuario": "TomyDurso22",
+                "comentario": "Una gran pelicula, que pronto podr\u00eda considerarse como un cl\u00e1sico Argentino del cine."
+            }
+        ],
+        "Sinopsis": "Amadeo es un chico t\u00edmido y virtuoso que deber\u00e1 enfrentarse a un habilidoso rival sobre el campo de f\u00fatbol, conocido con el apodo de El Crack. Para ello, contar\u00e1 con la inestimable ayuda de unos jugadores de futbol."
     }
 ]

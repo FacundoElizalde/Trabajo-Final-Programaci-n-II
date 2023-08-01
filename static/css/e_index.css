@@ -12,7 +12,7 @@ body{
 header {
     height: 70px;
     width: 100%;
-    background-color: darkblue;
+    background-color: #080f28;
 }
 header nav {
     display:flex;
@@ -41,7 +41,7 @@ header nav {
     width: 45px;
     height: 45px;
     margin: 10px;
-    color: darkblue;
+    color: #080f28;
     background-color: white;
 }
 button:hover {
@@ -68,8 +68,8 @@ a{
 .agregar_deco, .dgi_deco, .todas_deco, .logout_deco, .usuario_deco{
     margin-right: 1%;
     margin-left: 1%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: Arial;
     padding: 1%;
     text-align: center;
@@ -129,8 +129,9 @@ h1{
     flex-direction: column;
     max-width: 500px;
     font-family: arial;
-    color: blue;
-    border: 3px solid blue;
+    color: whitesmoke;
+    background-color: #080f28;
+    border: 3px solid whitesmoke;
     margin: auto;
     padding: 2%;
     border-radius: 25px;
@@ -161,7 +162,6 @@ h1{
     margin: 2%;
 }
 .imagen_deco{
-    border: 3px solid darkblue;
     border-radius: 20px;
 }
 .info_pelicula{
@@ -173,19 +173,21 @@ h1{
     margin-left: 8%;
 }
 .info{
-    color: blue;
-    font-family: Arial black;
+    color: white;
+    font-family: 'Segoe UI';
+    background-color: #080f28;
     margin: 2%;
     padding: 2%;
-    border: 3px solid darkblue;
+    border: 3px solid white;
     border-radius: 20px;
 }
 .h1_peli{
     margin: 2%;
     border-radius: 20px;
-    border: 3px solid darkblue;
-    color: darkblue;
-    background-color: lightblue;
+    border: 3px solid white;
+    color: white;
+    font-family: 'Segoe UI';
+    background-color: #080f28;
 }
 #director_peli, #año_peli, #fecha_peli, #sinopsis_peli{
     padding: 2%;
