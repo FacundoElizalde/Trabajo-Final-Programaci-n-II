@@ -203,3 +203,15 @@ h1{
     font-family: arial;
     text-transform: uppercase;
 }
+.comentar{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+.titulocom_deco{
+    color: white;
+    font-family: Arial;
+}
+.hacer_comentario_deco{
+    margin-top: 1%;
+}
