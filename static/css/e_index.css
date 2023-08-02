@@ -327,3 +327,41 @@ h1{
     margin-bottom: 2%;
     font-family: 'Segoe UI';
 }
+
+/********* EDITAR *******/
+
+.cont_editar{
+    padding-bottom: 9.5%;
+}
+.edit_peli{
+    margin: 0;
+    margin-left: 47%;
+    padding: 1%;
+}
+#edit_peli_head{
+    background-color: #080f28;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    font-family: 'Segoe UI';
+    margin-bottom: 5%;
+}
+
+/********** ELIMINAR ***********/
+
+.cont_eliminar{
+    padding-bottom: 9.5%;
+}
+.del_peli{
+    margin: 0;
+    margin-left: 47%;
+    padding: 1%;
+}
+#del_peli_head{
+    background-color: #080f28;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    font-family: 'Segoe UI';
+    margin-bottom: 5%;
+}
