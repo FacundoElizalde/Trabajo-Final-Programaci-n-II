@@ -2,11 +2,16 @@
 
 {% block content %}
 
-<h1>Eliminar Película: {{ peli }}</h1>
-    <form method="post">
-        <input type="hidden" name="peli" value="{{ peli }}">
-        <input type="submit" value="Eliminar Película">
-    </form>
-    <a href="{{ url_for('index') }}">Volver al Inicio</a>
+<h1 id="del_peli_head">Desea eliminar {{ peli }} del servidor?</h1>
+
+    <div class="eliminacion">
+        <div class="eliminar_but">
+            <form method="post">
+                <input type="hidden" name="peli" value="{{ peli }}">
+                <input type="submit" value="Eliminar Película">
+            </form>
+        </div>
+        <div class="back_but"><a href="{{ url_for('index') }}">Volver al Inicio</a></div>
+    </div>
 
 {% endblock %}

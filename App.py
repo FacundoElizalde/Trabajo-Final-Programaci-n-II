@@ -152,7 +152,9 @@ def edit_pelicula(peli):
 @app.route('/allmovies')
 def allPelis():
   peliculas = funciones.funciones.movies_files()
-  return Response (render_template("all.html", user=funciones.funciones.verify(), all=peliculas), status = HTTPStatus.OK)
+  return Response (render_template("all.html", 
+  user=funciones.funciones.verify(), all=peliculas), 
+  status = HTTPStatus.OK)
 
 if __name__ == "__main__":
   app.run(debug=True)

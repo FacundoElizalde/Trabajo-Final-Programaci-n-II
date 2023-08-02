@@ -370,4 +370,14 @@ h1{
     border: 2px solid whitesmoke;
     font-family: 'Segoe UI';
     margin-bottom: 5%;
+    margin-top: 3%;
+}
+.eliminacion{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+.eliminar_but, .back_but{
+    margin: auto;
+   
 }
