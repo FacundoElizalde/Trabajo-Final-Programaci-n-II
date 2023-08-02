@@ -128,7 +128,7 @@ def del_pelicula(peli):
     return render_template('del_pelicula.html', peli=peli, user=funciones.funciones.verify())
 
 @app.route("/pelicula/editar/<peli>",methods=["GET", "POST"])
-def editarPeli(peli):
+def edit_pelicula(peli):
   if 'username' not in session:
     return redirect(url_for('index'))
   else:
@@ -146,7 +146,8 @@ def editarPeli(peli):
       }
       funciones.funciones.update(peliculaEdicion)
       return redirect(url_for('index'))
-    return render_template("edit_pelicula.html", pelicula_encontrada = funciones.funciones.ret_movie(peli))
+    return render_template("edit_pelicula.html", pelicula_encontrada = funciones.funciones.ret_movie(peli), 
+    directores=funciones.funciones.Directores, generos=funciones.funciones.Generos)
 
 @app.route('/allmovies')
 def allPelis():

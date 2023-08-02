@@ -96,7 +96,7 @@ def comentar(comentario, pelicula):
 def update(peli):
   dataMovies = movies_files()
   for movie in dataMovies:
-    if peli["Id"] == movie["Id"]:
+    if movie["Id"] == peli["Id"]:
       movie["Nombre"] = peli["Nombre"]
       movie["Anio"] = peli["Anio"]
       movie["Fecha_Estreno"] = peli["Fecha_Estreno"]
