@@ -290,6 +290,12 @@ h1{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    background-color: #080f28;
+    width: 275px;
+    margin-bottom: 2%;
+    padding: 1%;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
 }
 .editar_pelicula, .eliminar_pelicula{
     margin-top: 1%;
