@@ -1,12 +1,12 @@
-import json
 from flask import session
+import json
 
 Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror", "Western", "Documental", "Musical", "Thriller", 
            "Epico", "Belico", "Deportes", "Animacion"]
+
 Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee",
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold", "Martin Scorsese", "Quentin Tarantino",
-             "Woody Allen", "Juan Jose Campanella", "Carlos Saldanha"]
-
+             "Woody Allen", "Juan Jose Campanella", "Carlos Saldanha", "John Lasseter", "Santiago Mitre", "Justin Lin"]
 
 def movies_files():
   with open('./json/peliculas.json', encoding='utf-8') as archivo_json1:
@@ -18,7 +18,7 @@ def user_files():
     users = json.load(archivo_json1)
   return users
 
-def nombresPeliculas():
+def names_movies():
   nombres = []
   peliculas = movies_files()
   for i in peliculas[::-1]:
@@ -26,7 +26,7 @@ def nombresPeliculas():
         nombres.append(i["Nombre"])
   return nombres
 
-def imgPeliculas(): 
+def img_movies(): 
   img = []
   peliculas = movies_files()
   for i in peliculas[::-1]:
@@ -34,7 +34,7 @@ def imgPeliculas():
       img.append(i["img"])
   return img
 
-def agregarPeliculas(pelicula, userSession):
+def add_movies(pelicula, userSession):
   movies = movies_files()
   movies.append(pelicula)
   with open('./json/peliculas.json', 'w') as f:
@@ -55,23 +55,23 @@ def verify():
     user = ""
   return user
 
-def pelisConImg():
+def movies_w_img():
   imagenes=[]
   for i in movies_files():
     if i["img"]!="":
       imagenes.append(i["Nombre"])
   return imagenes
 
-def ret_peli(peli):
+def ret_movie(peli):
     for i in movies_files():
         if i["Nombre"] == peli:
             return i
 
-def siHayComentarios(nombrePeli):
+def if_coments(nombrePeli):
   movies = movies_files()
   for movie in movies:
     if movie['Nombre'] == nombrePeli:
-      if len(movie['Comentarios']) > 0:
+      if len(movie['Comentarios']) >= 1:
         return 1
       else:
         return 2
@@ -79,7 +79,7 @@ def siHayComentarios(nombrePeli):
 def comentar(comentario, pelicula):
   movies = movies_files()
   users = user_files()
-  id = ret_peli(pelicula)["Id"]
+  id = ret_movie(pelicula)["Id"]
   for movie in movies:
     if movie["Nombre"] == pelicula:
       movie["Comentarios"].append(comentario)
@@ -89,15 +89,6 @@ def comentar(comentario, pelicula):
   with open('./json/usuarios.json', 'w') as f:
     json.dump(users, f, indent=4)
     f.close()
-  with open('./json/peliculas.json', 'w') as f:
-    json.dump(movies, f, indent=4)
-    f.close()
-
-def del_pelicula(peli):
-  movies = movies_files()
-  for movie in movies:
-    if movie['nombre'] == peli:
-      movies.remove(movie)
   with open('./json/peliculas.json', 'w') as f:
     json.dump(movies, f, indent=4)
     f.close()
@@ -116,3 +107,12 @@ def update(peli):
   with open('./json/peliculas.json', "w") as file:
    json.dump(dataMovies, file, indent=4)
    file.close()
+
+def del_pelicula(peli):
+  movies = movies_files()
+  for movie in movies:
+    if movie['nombre'] == peli:
+      movies.remove(movie)
+  with open('./json/peliculas.json', 'w') as f:
+    json.dump(movies, f, indent=4)
+    f.close()

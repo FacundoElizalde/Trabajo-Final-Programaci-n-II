@@ -44,7 +44,11 @@
         "Apellido": "Mattikainen",
         "Usuario": "RallyLegend25",
         "Id": "4",
-        "Peliculas_Comentadas": [],
+        "Peliculas_Comentadas": [
+            "e39114e33fc975227c5352fa24e627be323c9a4c1d9cabe65a2e3d5ecb713756",
+            "88fe50f20a789026d12c4cb4b033b9d01965399e15abac3adbd11e9f846103b6",
+            "f1ff2c9cd6012c3c304db71c41475840ba9f0b50fbc0a65d82ff5cd3cd6554f6"
+        ],
         "Contrasenia": "MatinsenJensen67"
     },
     {

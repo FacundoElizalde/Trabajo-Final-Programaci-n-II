@@ -147,7 +147,7 @@
         "Comentarios": [
             {
                 "idComent": "c202a28809188639822a15975eca9c078f566bd35a2da784a4944bf79c55c789",
-                "opinion": "Gran Pelicula, uno de los grandes clasicos del cine."
+                "comentario": "Gran Pelicula, uno de los grandes clasicos del cine."
             }
         ],
         "Sinopsis": "Un adolescente y un inventor extravagante viajan al pasado y al futuro para alterar una serie de eventos desastrosos."
@@ -163,7 +163,11 @@
         "Comentarios": [
             {
                 "idComent": "84a585a5060952c54a19d2ce90ebc62acaafe3300ac5031a07866a1534798069",
-                "opinion": "Sin dudas una pelicula excelente que narra una de las mejores rivalidades en la historia del automovilismo."
+                "comentario": "Sin dudas una pelicula excelente que narra una de las mejores rivalidades en la historia del automovilismo."
+            },
+            {
+                "usuario": "RallyLegend25",
+                "comentario": "Me encantan las peliculas sobre coches, por lo que esta pelicula es una de mis favoritas sin ninguna duda."
             }
         ],
         "Sinopsis": "El visionario Carroll Shelby y el conductor brit\u00e1nico Ken Miles reciben la misi\u00f3n de construir un nuevo autom\u00f3vil con el fin de derrocar el dominio de Ferrari en el Campeonato del Mundo de Le Mans de 1966."
@@ -179,7 +183,7 @@
         "Comentarios": [
             {
                 "idComent": "001837c7c9cc666729c97cc9b4feb54251bf913ef8f68c96a60720e641bd4d16",
-                "opinion": "Una de mis peliculas favoritas de este director, la actuacion de Di Caprio es digna de un \u00f3scar, una lastima que no se lo dieron."
+                "comentario": "Una de mis peliculas favoritas de este director, la actuacion de Di Caprio es digna de un \u00f3scar, una lastima que no se lo dieron."
             },
             {
                 "usuario": "leomessi10",
@@ -199,7 +203,7 @@
         "Comentarios": [
             {
                 "idComent": "64b359dcae1fef3315e10448681799766b2da2038b806a47777a41f3254a47c2",
-                "opinion": "Una de mis peliculas favoritas de Jason Statham."
+                "comentario": "Una de mis peliculas favoritas de Jason Statham."
             }
         ],
         "Sinopsis": "El exmilitar Frank Martin vive lo que parece ser una vida tranquila, prestando sus servicios como transportador, pero cuando rompe las tres reglas de conducta por las que se rige, la violencia vuelve a adue\u00f1arse de su vida."
@@ -278,6 +282,22 @@
                 "comentario": "La segunda mejor pel\u00edcula de la historia solo por detr\u00e1s de Rio. Me se todo el lore de la pel\u00edcula y es la mejor pel\u00edcula del mundo!!!!!!"
             }
         ],
-        "Sinopsis": "Blu, Jewel y sus tres ni\u00f1os dejan la comodidad de la ciudad y viajan a la selva del Amazonas para aprender a vivir como aves salvajes."
+        "Sinopsis": "Blu, Perla y sus tres ni\u00f1os dejan la comodidad de la ciudad y viajan a la selva del Amazonas para aprender a vivir como aves salvajes."
+    },
+    {
+        "Id": "f1ff2c9cd6012c3c304db71c41475840ba9f0b50fbc0a65d82ff5cd3cd6554f6",
+        "Nombre": "Cars",
+        "Anio": "2006",
+        "Fecha_Estreno": "29 de Junio",
+        "Director": "John Lasseter",
+        "Genero": "Animacion",
+        "img": "https://pics.filmaffinity.com/Cars-746710621-large.jpg",
+        "Comentarios": [
+            {
+                "usuario": "RallyLegend25",
+                "comentario": "Sin dudas la pel\u00edcula que mas me marco en mi infancia, una de mis pel\u00edculas de cine favoritas y que me impulso a dedicarme a las carreras."
+            }
+        ],
+        "Sinopsis": "De camino al prestigiado campeonato Copa Pist\u00f3n, un autom\u00f3vil de carreras que s\u00f3lo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios veh\u00edculos que viven en un pueblo a lo largo de la hist\u00f3rica Ruta 66."
     }
 ]

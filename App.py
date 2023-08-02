@@ -2,7 +2,6 @@ from flask import Flask,request,Response,render_template,redirect,url_for, sessi
 from http import HTTPStatus
 import funciones.funciones
 import secrets
-import json
 
 app = Flask(__name__)
 app.secret_key = 's94LQfKH83jxfr7o0ZQDfdttRznMeX4rZR0Q3sU8otma8WNYCuTWBViUosLhepjA'
@@ -14,8 +13,8 @@ def retornar():
 @app.route("/home",methods=["GET"])
 def index():
   return Response (render_template("peliculas.html", user=funciones.funciones.verify(), 
-  nombre_peliculas=funciones.funciones.nombresPeliculas(), 
-  imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
+  nombre_peliculas=funciones.funciones.names_movies(), 
+  imagenes_peliculas=funciones.funciones.img_movies()), status = HTTPStatus.OK)
 
 @app.route("/buscar/<int:info>",methods=["GET"])
 @app.route("/buscar/<info>",methods=["GET"])
@@ -23,7 +22,7 @@ def buscar(info):
     lista_encontradas=[]
     peliculas = funciones.funciones.movies_files()
     for i in peliculas[::-1]:
-        #print(i.values())
+
         for j in i.values():
             if str(info).isnumeric():
                 if ((str(info) in str(j)) and (i not in lista_encontradas)) and (len(lista_encontradas)<10):
@@ -47,7 +46,7 @@ def buscar_post():
 def dGI():
   return Response (render_template("info_adicional.html", 
   user=funciones.funciones.verify(),directores = funciones.funciones.Directores,
-  generos=funciones.funciones.Generos, imagenes = funciones.funciones.pelisConImg()),status=HTTPStatus.OK)
+  generos=funciones.funciones.Generos, imagenes = funciones.funciones.movies_w_img()),status=HTTPStatus.OK)
 
 @app.route('/login', methods=['GET', 'POST'])
 @app.route('/perfil', methods=['GET', 'POST'])
@@ -67,10 +66,9 @@ def login():
       else:
         user = ""
     return Response (render_template("peliculas.html", user=user, 
-    nombre_peliculas=funciones.funciones.nombresPeliculas(), 
-    imagenes_peliculas=funciones.funciones.imgPeliculas()), status = HTTPStatus.OK)
+    nombre_peliculas=funciones.funciones.names_movies(), 
+    imagenes_peliculas=funciones.funciones.img_movies()), status = HTTPStatus.OK)
   return render_template('perfil.html', user=funciones.funciones.verify())
-
 
 @app.route('/logout')
 def logout():
@@ -92,7 +90,7 @@ def pelicula(nombre_pelicula):
       return render_template('comentarios.html', 
       unaPeli=peli,
       user=funciones.funciones.verify(),
-      comentarios=funciones.funciones.siHayComentarios(nombre_pelicula),
+      comentarios=funciones.funciones.if_coments(nombre_pelicula),
       )
   
 @app.route('/pelicula/add', methods=['GET', 'POST'])
@@ -116,7 +114,7 @@ def agregarPelicula():
         ],
         "Sinopsis":request.form['sinopsis']
     }
-    funciones.funciones.agregarPeliculas(pelicula, session['username'])
+    funciones.funciones.add_movies(pelicula, session['username'])
   return render_template('add_pelicula.html', directores=funciones.funciones.Directores, generos=funciones.funciones.Generos)
 
 @app.route('/pelicula/eliminar/<peli>', methods=["GET","POST"])
@@ -134,7 +132,7 @@ def editarPeli(peli):
   if 'username' not in session:
     return redirect(url_for('index'))
   else:
-    pelicula_mod_id=funciones.funciones.ret_peli(peli)["Id"]
+    pelicula_mod_id=funciones.funciones.ret_movie(peli)["Id"]
     if request.method=="POST":
       peliculaEdicion = {
         "Id":pelicula_mod_id,
@@ -148,7 +146,7 @@ def editarPeli(peli):
       }
       funciones.funciones.update(peliculaEdicion)
       return redirect(url_for('index'))
-    return render_template("edit_pelicula.html", pelicula_encontrada = funciones.funciones.ret_peli(peli))
+    return render_template("edit_pelicula.html", pelicula_encontrada = funciones.funciones.ret_movie(peli))
 
 @app.route('/allmovies')
 def allPelis():
