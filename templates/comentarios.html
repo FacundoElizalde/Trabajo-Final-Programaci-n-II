@@ -26,12 +26,10 @@
   <h3 class="h3_coment">Comentarios:</h3>
 
   <div class="sec_comentarios">
-
-    {% for comentario in unaPeli.Comentarios%}
-      <p id="comentario_usuario"><strong>{{comentario['Usuario']}} </strong>{{comentario.Comentario}}</p>
+    {% for comentario in comentarios %}
+      <p id="comentario_usuario"><strong>{{ comentario['usuario'] }} </strong>{{ comentario['comentario'] }}</p>
       <br>
     {% endfor %}
-
   </div>
     
   <div class="opciones">
@@ -59,22 +57,18 @@
           <input type="submit" value="Editar {{unaPeli.Nombre}}" id="boton_editar">
         </form>
       </div>
-
-      {% if comentarios == 1 %}
+      {% if comentarios|length > 1 %}
         <span></span>
       {% else %}
-
-        <div class="eliminar_pelicula">
-          <form action="/pelicula/eliminar/{{ unaPeli.Nombre }}">
-            <input type="submit" value="Eliminar {{unaPeli.Nombre}}" id="boton_eliminar">
-          </form>
-        </div>
-
-        {% endif%}
-        {% endif%}
+          <div class="eliminar_pelicula">
+            <form action="/pelicula/eliminar/{{ unaPeli.Nombre }}">
+              <input type="submit" value="Eliminar {{ unaPeli.Nombre }}" id="boton_eliminar">
+            </form>
+          </div>
+      {% endif %}
+      {% endif %}
     </div>
 
   </div>
 </div>
-
 {% endblock %}

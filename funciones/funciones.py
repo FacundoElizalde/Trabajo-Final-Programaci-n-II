@@ -68,13 +68,11 @@ def ret_movie(peli):
             return i
 
 def if_coments(nombrePeli):
-  movies = movies_files()
-  for movie in movies:
-    if movie['Nombre'] == nombrePeli:
-      if len(movie['Comentarios']) >= 1:
-        return 1
-      else:
-        return 2
+    movies = movies_files()
+    for movie in movies:
+        if movie['Nombre'] == nombrePeli:
+            return movie['Comentarios']
+    return []
 
 def comentar(comentario, pelicula):
   movies = movies_files()
