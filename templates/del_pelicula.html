@@ -2,9 +2,11 @@
 
 {% block content %}
 
-<div class="cont_eliminar">
-    <h1 id="del_peli_head">Eliminar {{peli}}</h1>
-    <button value="{{peli}}" class="del_peli">Eliminar</button>
-</div>
+<h1>Eliminar Película: {{ peli }}</h1>
+    <form method="post">
+        <input type="hidden" name="peli" value="{{ peli }}">
+        <input type="submit" value="Eliminar Película">
+    </form>
+    <a href="{{ url_for('index') }}">Volver al Inicio</a>
 
 {% endblock %}

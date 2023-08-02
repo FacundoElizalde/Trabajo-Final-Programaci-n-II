@@ -111,7 +111,7 @@ def update(peli):
 def del_pelicula(peli):
   movies = movies_files()
   for movie in movies:
-    if movie['nombre'] == peli:
+    if movie['Nombre'] == peli:
       movies.remove(movie)
   with open('./json/peliculas.json', 'w') as f:
     json.dump(movies, f, indent=4)
