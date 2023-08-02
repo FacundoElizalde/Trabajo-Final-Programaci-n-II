@@ -127,7 +127,7 @@ def del_pelicula(peli):
       return redirect(url_for('index'))
     return render_template('del_pelicula.html', peli=peli, user=funciones.funciones.verify())
 
-@app.route("/pelicula/editar/<peli>",methods=["GET","POST"])
+@app.route("/pelicula/editar/<peli>",methods=["GET", "POST"])
 def editarPeli(peli):
   if 'username' not in session:
     return redirect(url_for('index'))

@@ -285,7 +285,19 @@ h1{
     height: 200px;
     color: white;
     font-family: 'Segoe UI';
-
+}
+.botones_cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.editar_pelicula, .eliminar_pelicula{
+    margin-top: 1%;
+    margin: 2%;
+    
+}
+.editar_pelicula{
+    margin-left: 0%;
 }
 
 /************* DIR AND GEN ***************/
