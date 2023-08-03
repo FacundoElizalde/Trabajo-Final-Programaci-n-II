@@ -137,11 +137,13 @@ a{
 h1{
     color: whitesmoke;
     font-family: Arial;
+    background-color: #080f28;
     text-transform: uppercase;
     text-align: center;
     margin: 16.8%;
-    border: 3px solid darkblue;
-    border-radius: 10px;
+    margin-bottom: 0;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
     padding: 4%;
     backdrop-filter: blur(7px);
 }
