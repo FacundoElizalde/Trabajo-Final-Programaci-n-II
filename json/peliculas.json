@@ -157,6 +157,10 @@
             {
                 "usuario": "RallyLegend25",
                 "comentario": "Me encantan las peliculas sobre coches, por lo que esta pelicula es una de mis favoritas sin ninguna duda."
+            },
+            {
+                "usuario": "zyozyo",
+                "comentario": "Me encantan los autos, me encanta esta pelicula."
             }
         ],
         "Sinopsis": "El visionario Carroll Shelby y el conductor brit\u00e1nico Ken Miles reciben la misi\u00f3n de construir un nuevo autom\u00f3vil con el fin de derrocar el dominio de Ferrari en el Campeonato del Mundo de Le Mans de 1966."
@@ -261,6 +265,14 @@
             {
                 "usuario": "ripclassic",
                 "comentario": "Esta pel\u00edcula me incit\u00f3 a te\u00f1irme el pelo de Azul como Blu."
+            },
+            {
+                "usuario": "ripclassic",
+                "comentario": "Amo esta pelicula, creo que ya lo dije varias veces"
+            },
+            {
+                "usuario": "ripclassic",
+                "comentario": "Siento que esta pelicula esta inspirada en mi grupo de amigos."
             }
         ],
         "Sinopsis": "Capturado por contrabandistas cuando era apenas una cr\u00eda, un guacamayo llamado Blu nunca aprendi\u00f3 a volar y vive una vida feliz domesticado en Minnesota con su amiga humana, Linda. Blu se piensa que es el \u00faltimo de su especie, pero cuando escuchan que Jewel, una solitaria hembra, vive en R\u00edo de Janeiro, Blu y Linda emprender\u00e1n un viaje a su encuentro."
@@ -281,6 +293,22 @@
             {
                 "usuario": "ripclassic",
                 "comentario": "La segunda mejor pel\u00edcula de la historia solo por detr\u00e1s de Rio. Me se todo el lore de la pel\u00edcula y es la mejor pel\u00edcula del mundo!!!!!!"
+            },
+            {
+                "usuario": "ripclassic",
+                "comentario": "Me encanta esta pelicula tambien, muy buena trama."
+            },
+            {
+                "usuario": "ripclassic",
+                "comentario": "Soy fan de toda la saga rio"
+            },
+            {
+                "usuario": "ripclassic",
+                "comentario": "Me hace acordar mucho a cuando viaje a Brasil, tremendos tiempos aquellos."
+            },
+            {
+                "usuario": "ripclassic",
+                "comentario": "El mejor personaje de la pelicula es el pajaro que tiene una tapita de gaseosa en la cabeza, es un tipazo, con el me iria de joda."
             }
         ],
         "Sinopsis": "Blu, Perla y sus tres ni\u00f1os dejan la comodidad de la ciudad y viajan a la selva del Amazonas para aprender a vivir como aves salvajes."
@@ -300,5 +328,37 @@
             }
         ],
         "Sinopsis": "De camino al prestigiado campeonato Copa Pist\u00f3n, un autom\u00f3vil de carreras que s\u00f3lo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios veh\u00edculos que viven en un pueblo a lo largo de la hist\u00f3rica Ruta 66."
+    },
+    {
+        "Id": "d2f06dc312f9934fc14091a95c7d8622d46e4ad1f23e0b3b0d744625d44073a4",
+        "Nombre": "Fast and Furious 4",
+        "Anio": "2009",
+        "Fecha_Estreno": "2 de Abril",
+        "Director": "Justin Lin",
+        "Genero": "Accion",
+        "img": "https://pics.filmaffinity.com/Fast_Furious_Aaun_maas_raapido_A_todo_gas_4-818035556-large.jpg",
+        "Comentarios": [
+            {
+                "usuario": "ripclassic",
+                "comentario": "Una de mis pel\u00edculas favoritas de toda la saga."
+            }
+        ],
+        "Sinopsis": "El fugitivo Dominic Toretto y el agente Brian O'Conner reavivan su enemistad, aunque las circunstancias los obliga a unir fuerzas contra un enemigo com\u00fan: deben encontrar al asesino de Vince."
+    },
+    {
+        "Id": "1c6ccfd00e0f7050a311c2fee77d7e0300ff429195c8844d5df887b683c4f73e",
+        "Nombre": "Argentina 1985",
+        "Anio": "2022",
+        "Fecha_Estreno": "29 de Septiembre",
+        "Director": "Santiago Mitre",
+        "Genero": "Drama",
+        "img": "https://pics.filmaffinity.com/Argentina_1985-599655212-large.jpg",
+        "Comentarios": [
+            {
+                "usuario": "zyozyo",
+                "comentario": "Una excelente pelicula argenitna que narra uno de los acontecimientos mas importantes  de la historia de nuestro pais."
+            }
+        ],
+        "Sinopsis": "Durante la d\u00e9cada de 1980, un grupo de abogados investiga y lleva a juicio a los responsables de la dictadura c\u00edvico-militar argentina."
     }
 ]

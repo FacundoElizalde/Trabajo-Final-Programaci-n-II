@@ -27,7 +27,7 @@
 
   <div class="sec_comentarios">
     {% for comentario in comentarios %}
-      <p id="comentario_usuario"><strong>{{ comentario['usuario'] }} </strong>{{ comentario['comentario'] }}</p>
+      <p id="comentario_usuario"><strong>{{ comentario['usuario'] }}: </strong>{{ comentario['comentario'] }}</p>
       <br>
     {% endfor %}
   </div>

@@ -26,6 +26,13 @@
             "71c0f9c690310005ebad96cca1317ee37c997a105e37d926fe00f4c4c6491df5",
             "71c0f9c690310005ebad96cca1317ee37c997a105e37d926fe00f4c4c6491df5",
             "71c0f9c690310005ebad96cca1317ee37c997a105e37d926fe00f4c4c6491df5",
+            "71c0f9c690310005ebad96cca1317ee37c997a105e37d926fe00f4c4c6491df5",
+            "71c0f9c690310005ebad96cca1317ee37c997a105e37d926fe00f4c4c6491df5",
+            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174",
+            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174",
+            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174",
+            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174",
+            "d2f06dc312f9934fc14091a95c7d8622d46e4ad1f23e0b3b0d744625d44073a4",
             "71c0f9c690310005ebad96cca1317ee37c997a105e37d926fe00f4c4c6491df5"
         ],
         "Contrasenia": "fire_ball"
@@ -59,7 +66,10 @@
         "Apellido": "Park",
         "Usuario": "zyozyo",
         "Id": "5",
-        "Peliculas_Comentadas": [],
+        "Peliculas_Comentadas": [
+            "e39114e33fc975227c5352fa24e627be323c9a4c1d9cabe65a2e3d5ecb713756",
+            "1c6ccfd00e0f7050a311c2fee77d7e0300ff429195c8844d5df887b683c4f73e"
+        ],
         "Contrasenia": "oneinamillion",
         "peliculas_comentadas": [
             {

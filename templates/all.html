@@ -6,7 +6,6 @@
           {% if all|length > 0 %}
               {% for movie in all %}
                   <div id="{{movie}}">
-                    <a href="/pelicula/{{ movie['nombre'] }}">
                       <img src="{{ movie['img'] }}" alt="imagen" width="200px" height="300px"> 
                     </a>
                   </div>
