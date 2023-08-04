@@ -1,4 +1,4 @@
-from flask import Flask,request,Response,render_template,redirect,url_for, session
+from flask import Flask,request, Response,render_template,redirect,url_for, session
 from http import HTTPStatus
 import funciones.funciones
 import secrets

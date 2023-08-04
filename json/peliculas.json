@@ -350,6 +350,10 @@
             {
                 "usuario": "ripclassic",
                 "comentario": "Una de mis pel\u00edculas favoritas de toda la saga."
+            },
+            {
+                "usuario": "RallyLegend25",
+                "comentario": "La pelicula donde la saga se empez\u00f3 a echar a perder."
             }
         ],
         "Sinopsis": "El fugitivo Dominic Toretto y el agente Brian O'Conner reavivan su enemistad, aunque las circunstancias los obliga a unir fuerzas contra un enemigo com\u00fan: deben encontrar al asesino de Vince."
@@ -385,5 +389,37 @@
             }
         ],
         "Sinopsis": "\"La Pasi\u00f3n\" es un documental rodado durante todo un a\u00f1o donde se sigue la vida del equipo de f\u00fatbol de Gimnasia y Esgrima de La Plata. En esta pel\u00edcula cuya realizaci\u00f3n acompa\u00f1\u00f3 todo el proceso futbol\u00edstico que condujo a que el club Decano de Am\u00e9rica permanezca en la Primera Divisi\u00f3n del f\u00fatbol argentino, refleja de manera in\u00e9dita todo lo que rodea el d\u00eda a d\u00eda de la Instituci\u00f3n"
+    },
+    {
+        "Id": "2317eb413e99ee4dc50cbe458973ca8d2922f0a7a56f0a806eeef5b2c1da890a",
+        "Nombre": "Cars 2",
+        "Anio": "2011",
+        "Fecha_Estreno": "7 de Julio",
+        "Director": "John Lasseter",
+        "Genero": "Animacion",
+        "img": "https://www.ecartelera.com/carteles/4000/4017/004_m.jpg",
+        "Comentarios": [
+            {
+                "usuario": "RallyLegend25",
+                "comentario": "Personalmente no me gust\u00f3 esta edicion de Cars, pero la pongo en el sitio ya que considero que la saga completa de Cars debe estar aqui."
+            }
+        ],
+        "Sinopsis": "El Rayo McQueen y Mate viajan a Jap\u00f3n para participar en una carrera patrocinada por los fabricantes de un tipo de combustible ecol\u00f3gico. Sin embargo, unos villanos pretenden que el nuevo producto fracase."
+    },
+    {
+        "Id": "6bbf308a224233b592069f0373de2eab43d060b2dac60a31ff0eed1bd3efdcbd",
+        "Nombre": "Cars 3",
+        "Anio": "2017",
+        "Fecha_Estreno": "13 de Julio",
+        "Director": "John Lasseter",
+        "Genero": "Animacion",
+        "img": "https://es.web.img2.acsta.net/pictures/17/06/09/13/42/187933.jpg",
+        "Comentarios": [
+            {
+                "usuario": "RallyLegend25",
+                "comentario": "Mi pelicula de Cars favorita, y sin dudas para mi la mas infravalorada. Durante toda la pelicula se siente esa sensacion de nostalgia que no habiamos podido sentir en Cars 2, sin dudas una carta de amor al cine."
+            }
+        ],
+        "Sinopsis": "Eclipsado por los autos j\u00f3venes, el veterano Rayo McQueen ha sido expulsado del deporte que tanto ama. Sin embargo, no se rendir\u00e1 tan f\u00e1cilmente, con la ayuda de sus amigos, Rayo aprende trucos nuevos para vencer al arrogante Jackson Storm, el rival que lo humill\u00f3."
     }
 ]
