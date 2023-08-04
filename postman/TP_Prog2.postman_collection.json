@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "ee936f55-c34f-45c2-8449-42f89e749264",
+		"name": "TP_Prog2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28734385"
+	},
+	"item": [
+		{
+			"name": "PostEditarPelicula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\":\"a9ff38189155b666ce68099aaf8ff233113f7abaae71bf776273d36b2e4b5acd\",\r\n        \"Nombre\":\"Metegol\",\r\n        \"Anio\": 2012,\r\n        \"Fecha_Estreno\":\"19 de Julio\",\r\n        \"Director\":\"Juan Jose Campanella\",\r\n        \"Genero\":\"Accion\",\r\n        \"img\": \"https://m.media-amazon.com/images/I/91oBrUgZFhL._AC_UF894,1000_QL80_.jpg\",\r\n        \"Sinopsis\":\"Amadeo es un chico t\\u00edmido y virtuoso que deber\\u00e1 enfrentarse a un habilidoso rival sobre el campo de f\\u00fatbol, conocido con el apodo de El Crack. Para ello, contar\\u00e1 con la inestimable ayuda de unos jugadores de futbol.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/pelicula/editar/Metegol?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pelicula",
+						"editar",
+						"Metegol"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPelicula",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/pelicula/Metegol",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pelicula",
+						"Metegol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostAddPelicula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\":secrets.token_hex(),\r\n        \"Nombre\":request.form['nombre'],\r\n        \"Anio\":request.form['anio'],\r\n        \"Fecha_Estreno\":request.form['estreno'],\r\n        \"Director\":request.form['director'],\r\n        \"Genero\":request.form['genero'],\r\n        \"img\":request.form['imagen'],\r\n        \"Comentarios\":[\r\n          {\r\n            \"comentario\":request.form['opinion']\r\n          }\r\n        ],\r\n        \"Sinopsis\":request.form['sinopsis']\r\n    }",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/pelicula/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pelicula",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostDelPelicula",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

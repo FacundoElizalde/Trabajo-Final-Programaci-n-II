@@ -18,7 +18,12 @@
         "Director": "Greta Gerwig",
         "Genero": " Comedia",
         "img": "https://www.lahiguera.net/cinemania/pelicula/10297/barbie-cartel-11222.jpg",
-        "Comentarios": [],
+        "Comentarios": [
+            {
+                "usuario": "zyozyo",
+                "comentario": "Una pelicula muy cute. shy shy shy."
+            }
+        ],
         "Sinopsis": "Despu\u00e9s de ser expulsada de Barbieland por no ser una mu\u00f1eca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
     },
     {
@@ -273,6 +278,10 @@
             {
                 "usuario": "ripclassic",
                 "comentario": "Siento que esta pelicula esta inspirada en mi grupo de amigos."
+            },
+            {
+                "usuario": "zyozyo",
+                "comentario": "Muy buena pelicula, pero creo que los comentarios de ripclassic son inentendibles."
             }
         ],
         "Sinopsis": "Capturado por contrabandistas cuando era apenas una cr\u00eda, un guacamayo llamado Blu nunca aprendi\u00f3 a volar y vive una vida feliz domesticado en Minnesota con su amiga humana, Linda. Blu se piensa que es el \u00faltimo de su especie, pero cuando escuchan que Jewel, una solitaria hembra, vive en R\u00edo de Janeiro, Blu y Linda emprender\u00e1n un viaje a su encuentro."
@@ -360,5 +369,21 @@
             }
         ],
         "Sinopsis": "Durante la d\u00e9cada de 1980, un grupo de abogados investiga y lleva a juicio a los responsables de la dictadura c\u00edvico-militar argentina."
+    },
+    {
+        "Id": "1b655790b39d0ffe6534f7b1e8838a1b604632dbf894019021e46900a8ce10f4",
+        "Nombre": "La Pasion",
+        "Anio": "2009",
+        "Fecha_Estreno": "10 de Noviembre",
+        "Director": "Juan Jose Campanella",
+        "Genero": "Documental",
+        "img": "https://2.bp.blogspot.com/-cUy8EIYrm1g/T7Xbn3OfRTI/AAAAAAAAAF0/1zGAVIgz4Eg/s400/AFICHE%2BLA%2BPASI%25C3%2593N%2B2009.jpg",
+        "Comentarios": [
+            {
+                "usuario": "TomyDurso22",
+                "comentario": "Una de mis peliculas  sobre de deportes favoritas, narra una historia muy personal acerca de mi club al cual le tengo mucho cari\u00f1o. Vamos Gimnasia."
+            }
+        ],
+        "Sinopsis": "\"La Pasi\u00f3n\" es un documental rodado durante todo un a\u00f1o donde se sigue la vida del equipo de f\u00fatbol de Gimnasia y Esgrima de La Plata. En esta pel\u00edcula cuya realizaci\u00f3n acompa\u00f1\u00f3 todo el proceso futbol\u00edstico que condujo a que el club Decano de Am\u00e9rica permanezca en la Primera Divisi\u00f3n del f\u00fatbol argentino, refleja de manera in\u00e9dita todo lo que rodea el d\u00eda a d\u00eda de la Instituci\u00f3n"
     }
 ]
