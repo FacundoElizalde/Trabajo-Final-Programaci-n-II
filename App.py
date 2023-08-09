@@ -192,7 +192,7 @@ def agregarGenero():
         return jsonify({"mensaje": "Error al agregar el genero"})
 
 
-@app.route('/<director>', methods=['GET'])
+@app.route('/directores/<director>', methods=['GET'])
 def peliculaDirigida(director):
     pelis = funciones.funciones.movies_files()
     peliculas_dirigidas = []
@@ -202,6 +202,17 @@ def peliculaDirigida(director):
             peliculas_dirigidas.append(peli["Nombre"])
     
     return jsonify({"Peliculas en el sitio dirigidas por " + director: peliculas_dirigidas})
+
+@app.route('/generos/<genero>', methods=['GET'])
+def generoDisponible(genero):
+    pelis = funciones.funciones.movies_files()
+    generos_disponibles = []
+
+    for peli in pelis:
+        if peli["Genero"] == genero:
+            generos_disponibles.append(peli["Nombre"])
+    
+    return jsonify({"Peliculas disponibles en el sitio del genero " + genero: generos_disponibles})
 
 @app.route('/peliculas_con_imagen', methods=['GET'])
 def peliculasConImagen():
