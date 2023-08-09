@@ -6,6 +6,8 @@ import secrets
 app = Flask(__name__)
 app.secret_key = 's94LQfKH83jxfr7o0ZQDfdttRznMeX4rZR0Q3sU8otma8WNYCuTWBViUosLhepjA'
 
+INCREMENTO_CONTADOR = 1
+
 @app.route("/")
 def retornar():
   return redirect(url_for("index"),Response=HTTPStatus.OK)
@@ -112,7 +114,8 @@ def agregarPelicula():
             "comentario":request.form['opinion']
           }
         ],
-        "Sinopsis":request.form['sinopsis']
+        "Sinopsis":request.form['sinopsis'],
+        "Contador": 0
     }
     funciones.funciones.add_movies(pelicula, session['username'])
   return render_template('add_pelicula.html', directores=funciones.funciones.Directores, generos=funciones.funciones.Generos)
