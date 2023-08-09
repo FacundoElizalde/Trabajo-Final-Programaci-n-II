@@ -253,8 +253,8 @@ h1{
     font-family: 'Segoe UI';
     background-color: #080f28;
 }
-#director_peli, #año_peli, #fecha_peli, #sinopsis_peli, #contador{
-    padding: 2%;
+#director_peli, #año_peli, #fecha_peli, #sinopsis_peli{
+    padding: 1%;
 }
 .comentarios{
     display: flex;
@@ -404,7 +404,6 @@ h1{
     text-align: center;
     width: 30%;
     margin: auto;
-    
   }
 
   .pagination li {
