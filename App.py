@@ -172,7 +172,19 @@ def agregarDirector():
             return jsonify({"mensaje": "El director ya existe en la lista"})
     else:
       return jsonify({"mensaje": "Error al agregar el director"})
+    
+@app.route('/eliminar/eliminar_director', methods=['POST'])
+def eliminarDirector():
+    director_a_eliminar = request.json.get('director_a_eliminar')
 
+    if director_a_eliminar:
+        if director_a_eliminar in funciones.funciones.Directores:
+            funciones.funciones.Directores.remove(director_a_eliminar)
+            return jsonify({"mensaje": "Director eliminado exitosamente"})
+        else:
+            return jsonify({"mensaje": "El director no existe en la lista"})
+    else:
+        return jsonify({"mensaje": "Error al eliminar el director"})
 
 @app.route('/generos', methods=['GET'])
 def getGeneros():
@@ -191,6 +203,18 @@ def agregarGenero():
     else:
         return jsonify({"mensaje": "Error al agregar el genero"})
 
+@app.route('/eliminar/eliminar_genero', methods=['POST'])
+def eliminarGenero():
+    genero_a_eliminar = request.json.get('genero_a_eliminar')
+
+    if genero_a_eliminar:
+        if genero_a_eliminar in funciones.funciones.Generos:
+            funciones.funciones.Generos.remove(genero_a_eliminar)
+            return jsonify({"mensaje": "Genero eliminado exitosamente"})
+        else:
+            return jsonify({"mensaje": "El genero no existe en la lista"})
+    else:
+        return jsonify({"mensaje": "Error al eliminar el genero"})
 
 @app.route('/directores/<director>', methods=['GET'])
 def peliculaDirigida(director):
