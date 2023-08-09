@@ -157,19 +157,44 @@ def allPelis():
   status = HTTPStatus.OK)
 
 @app.route('/directores', methods=["GET"])
-def getDirectores():
-  directores = funciones.funciones.Directores
-  return directores
+def obtenerDirectores():
+    return jsonify({"Directores presentes en la plataforma": funciones.funciones.Directores})
 
-@app.route('/generos', methods=['GET', 'POST'])
+@app.route('/agregar/agregar_director', methods=['POST'])
+def agregarDirector():
+    nuevo_director = request.json.get('nuevo_director')
+
+    if nuevo_director:
+        if nuevo_director not in funciones.funciones.Directores:
+            funciones.funciones.Directores.append(nuevo_director)
+            return jsonify({"mensaje": "Director agregado exitosamente"})
+        else:
+            return jsonify({"mensaje": "El director ya existe en la lista"})
+    else:
+      return jsonify({"mensaje": "Error al agregar el director"})
+
+
+@app.route('/generos', methods=['GET'])
 def getGeneros():
-   generos = funciones.funciones.Generos
-   return generos
+    return jsonify({"Generos presentes en la plataforma": funciones.funciones.Generos})
+
+@app.route('/agregar/agregar_genero', methods=['POST'])
+def agregarGenero():
+    nuevo_genero = request.json.get('nuevo_genero')
+
+    if nuevo_genero:
+        if nuevo_genero not in funciones.funciones.Generos:
+            funciones.funciones.Generos.append(nuevo_genero)
+            return jsonify({"mensaje": "Genero agregado exitosamente"})
+        else:
+            return jsonify({"mensaje": "El genero ya existe en la lista"})
+    else:
+        return jsonify({"mensaje": "Error al agregar el genero"})
+
 
 @app.route('/<director>', methods=['GET'])
 def peliculaDirigida(director):
     pelis = funciones.funciones.movies_files()
-    
     peliculas_dirigidas = []
 
     for peli in pelis:
@@ -178,6 +203,17 @@ def peliculaDirigida(director):
     
     return jsonify({"Peliculas en el sitio dirigidas por " + director: peliculas_dirigidas})
 
+@app.route('/peliculas_con_imagen', methods=['GET'])
+def peliculasConImagen():
+    pelis = funciones.funciones.movies_files()
+    
+    peliculas_con_imagen = []
+
+    for peli in pelis:
+        if peli.get("img"):
+            peliculas_con_imagen.append(peli["Nombre"])
+    
+    return jsonify({"Peliculas con imagen": peliculas_con_imagen})
 
 if __name__ == "__main__":
   app.run(debug=True)
