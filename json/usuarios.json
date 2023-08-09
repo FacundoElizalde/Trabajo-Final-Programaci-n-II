@@ -90,7 +90,12 @@
         "Usuario": "Administrador",
         "Id": "6",
         "Peliculas_Comentadas": [
-            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174"
+            "0db5f22c15b5546d221ed7ccaa0cb6732e927aa3df3605f1a73a5ee1589e5174",
+            "f8b7a2c4bc224b328c1cfd9ea07387e25a3b2742af619c5858216fa3d710d7da",
+            "6988e1c32101eb18b99c9be3752b4d65b0984d52e00534264dd298e502e1b710",
+            "75c0c450effde879e6a03d98b5567ff2da6d5d98d3d324b5ec40f8b06b0e738f",
+            "e7bc4e77b776bb87280e9f16e03969e697830420387068a845829e1a26eb5834",
+            "sPgzZDqg78JwwDGYFQGtQcR4R3YsZhVrFPQNZkD2ND5r8Wx1ndauXBuDEuQ3CYoh"
         ],
         "Contrasenia": "abc123",
         "peliculas_comentadas": [

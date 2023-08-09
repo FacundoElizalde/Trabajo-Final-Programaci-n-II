@@ -27,17 +27,6 @@
         "Sinopsis": "Despu\u00e9s de ser expulsada de Barbieland por no ser una mu\u00f1eca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad."
     },
     {
-        "Id": "ezv1D6uKTDDGcyyq2oqVfpDzAt37yThxJrUZ90twc6JtoUce42YDijLVtyNyvh2z",
-        "Nombre": "Oppenheimer",
-        "Anio": 2023,
-        "Fecha_Estreno": "20 de Julio",
-        "Director": "Christoper Nolan",
-        "Genero": "Ciencia Ficci\u00f3n",
-        "img": "https://x-surcine.com/wp-content/uploads/2023/07/JPG000ax-4.jpg",
-        "Comentarios": [],
-        "Sinopsis": "El f\u00edsico J Robert Oppenheimer trabaja con un equipo de cient\u00edficos durante el Proyecto Manhattan, que condujo al desarrollo de la bomba at\u00f3mica."
-    },
-    {
         "Id": "fwcYw0R7yszkfAzFjtzNzg36XD96qU1JJM0Lcg0mxvNEg0V8juN2mUnwD1WyX4kY",
         "Nombre": "Batman: The Dark Knight",
         "Anio": 2008,
@@ -127,7 +116,12 @@
         "Director": "Stanley Kubrick",
         "Genero": "Drama",
         "img": "https://cdn.culturagenial.com/es/imagenes/1971-a-clockwork-orange.jpg",
-        "Comentarios": [],
+        "Comentarios": [
+            {
+                "usuario": "Administrador",
+                "comentario": "Excelente pelicula, un clasico del cine!!"
+            }
+        ],
         "Sinopsis": "Un criminal en la Inglaterra del futuro pasa una serie de procesos experimentales para corregir sus impulsos violentos."
     },
     {
@@ -409,17 +403,17 @@
     {
         "Id": "6bbf308a224233b592069f0373de2eab43d060b2dac60a31ff0eed1bd3efdcbd",
         "Nombre": "Cars 3",
-        "Anio": "2017",
-        "Fecha_Estreno": "13 de Julio",
+        "Anio": "2018",
+        "Fecha_Estreno": "10 de Mayo",
         "Director": "John Lasseter",
         "Genero": "Animacion",
-        "img": "https://es.web.img2.acsta.net/pictures/17/06/09/13/42/187933.jpg",
+        "img": "https://pics.filmaffinity.com/Up-672315222-large.jpg",
         "Comentarios": [
             {
                 "usuario": "RallyLegend25",
                 "comentario": "Mi pelicula de Cars favorita, y sin dudas para mi la mas infravalorada. Durante toda la pelicula se siente esa sensacion de nostalgia que no habiamos podido sentir en Cars 2, sin dudas una carta de amor al cine."
             }
         ],
-        "Sinopsis": "Eclipsado por los autos j\u00f3venes, el veterano Rayo McQueen ha sido expulsado del deporte que tanto ama. Sin embargo, no se rendir\u00e1 tan f\u00e1cilmente, con la ayuda de sus amigos, Rayo aprende trucos nuevos para vencer al arrogante Jackson Storm, el rival que lo humill\u00f3."
+        "Sinopsis": "Prueba de edicion"
     }
 ]

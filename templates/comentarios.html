@@ -17,10 +17,17 @@
       <p id="año_peli">AÑO DE LANZAMIENTO: {{unaPeli.Anio}}</p>
       <p id="fecha_peli">FECHA DE ESTRENO: {{unaPeli.Fecha_Estreno}}</p>
       <p id="sinopsis_peli">SINOPSIS: {{unaPeli.Sinopsis}}</p>
+
+      <a id="contador" title="Contador De Visitas">
+      <img style="border: 0px solid; display: inline;" 
+        alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=11591"></a>
+        {{ unaPeli.contador | safe }}
     </div>
   </div>
 </div>
 </div>
+
+
 
 <div class="comentarios">
   <h3 class="h3_coment">Comentarios:</h3>

@@ -1,4 +1,4 @@
-from flask import Flask,request, Response,render_template,redirect,url_for, session
+from flask import Flask,request, jsonify, Response,render_template,redirect,url_for, session
 from http import HTTPStatus
 import funciones.funciones
 import secrets
@@ -156,5 +156,29 @@ def allPelis():
   user=funciones.funciones.verify(), all=peliculas), 
   status = HTTPStatus.OK)
 
+@app.route('/directores', methods=["GET"])
+def getDirectores():
+  directores = funciones.funciones.Directores
+  return directores
+
+@app.route('/generos', methods=['GET', 'POST'])
+def getGeneros():
+   generos = funciones.funciones.Generos
+   return generos
+
+@app.route('/<director>', methods=['GET'])
+def peliculaDirigida(director):
+    pelis = funciones.funciones.movies_files()
+    
+    peliculas_dirigidas = []
+
+    for peli in pelis:
+        if peli["Director"] == director:
+            peliculas_dirigidas.append(peli["Nombre"])
+    
+    return jsonify({"Peliculas en el sitio dirigidas por " + director: peliculas_dirigidas})
+
+
 if __name__ == "__main__":
   app.run(debug=True)
+

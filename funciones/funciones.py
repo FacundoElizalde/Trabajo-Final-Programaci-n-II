@@ -4,6 +4,7 @@ import json
 Generos = ["Comedia", "Drama", "Romance", "Ciencia Ficcion", "Accion", "Terror", "Western", "Documental", "Musical", "Thriller", 
            "Epico", "Belico", "Deportes", "Animacion", "Crimen"]
 
+
 Directores = ["Louis Leterrier", "Greta Gerwig", "Christoper Nolan", "Francis Ford Coppola", "Jaume Collet-Serra", "Jung Su-yee",
              "Steven Caple Jr.", "Stanley Kubrick", "Robert Zemeckis", "James Mangold", "Martin Scorsese", "Quentin Tarantino",
              "Woody Allen", "Juan Jose Campanella", "Carlos Saldanha", "John Lasseter", "Santiago Mitre", "Justin Lin"]
